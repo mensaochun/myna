@@ -1,0 +1,20 @@
+note:
+when using armadillo in clion, it need to configure the cmakelists.txt, modified contents is marked by #<<<
+
+########################################
+cmake_minimum_required(VERSION 3.3)
+project(ThirdProject)
+
+find_package(Armadillo REQUIRED) # <<<
+include_directories(${ARMADILLO_INCLUDE_DIRS}) # <<<
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES main.cpp)
+add_executable(ThirdProject ${SOURCE_FILES})
+target_link_libraries(ThirdProject ${ARMADILLO_LIBRARIES}) # <<<
+##################################################################
+
+more details, see:
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/205823019-Errors-compiling-code-with-armadillo
+
