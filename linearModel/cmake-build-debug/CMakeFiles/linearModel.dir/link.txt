@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/linearModel.dir/main.cpp.o  -o linearModel 

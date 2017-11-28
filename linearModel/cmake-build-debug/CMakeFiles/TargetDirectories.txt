@@ -1,0 +1,3 @@
+/home/mensaochun/CLionProjects/machineLearning/linearModel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mensaochun/CLionProjects/machineLearning/linearModel/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mensaochun/CLionProjects/machineLearning/linearModel/cmake-build-debug/CMakeFiles/linearModel.dir
