@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mensaochun/CLionProjects/machineLearning/linearModel/main.cpp" "/home/mensaochun/CLionProjects/machineLearning/linearModel/cmake-build-debug/CMakeFiles/linearModel.dir/main.cpp.o"
+  "/home/pi/CLionProjects/machine_learning/linearModel/main.cpp" "/home/pi/CLionProjects/machine_learning/linearModel/cmake-build-debug/CMakeFiles/linearModel.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,9 +1,9 @@
 #include <iostream>
+#include <armadillo>
 using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    cout<<"mensaochun";
-    cout<<"add";
-    return 0;
+    arma::mat A;
+
+    arma::vec 
 
 }
