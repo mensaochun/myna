@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mensaochun/CLionProjects/myna/cnn/./include/blob.h
+vector
+-
+armadillo
+-
+iostream
+-
+
+/home/mensaochun/CLionProjects/myna/cnn/include/blob.h
+vector
+-
+armadillo
+-
+iostream
+-
+
+/home/mensaochun/CLionProjects/myna/cnn/main.cpp
+./include/blob.h
+/home/mensaochun/CLionProjects/myna/cnn/./include/blob.h
+
+/home/mensaochun/CLionProjects/myna/cnn/src/blob.cpp
+../include/blob.h
+/home/mensaochun/CLionProjects/myna/cnn/include/blob.h
+

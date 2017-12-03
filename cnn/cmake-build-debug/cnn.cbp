@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mensaochun/CLionProjects/myna/cnn/include/blob.h">
+			<Option target="cnn"/>
+		</Unit>
 		<Unit filename="/home/mensaochun/CLionProjects/myna/cnn/main.cpp">
+			<Option target="cnn"/>
+		</Unit>
+		<Unit filename="/home/mensaochun/CLionProjects/myna/cnn/src/blob.cpp">
 			<Option target="cnn"/>
 		</Unit>
 		<Unit filename="/home/mensaochun/CLionProjects/myna/cnn/CMakeLists.txt">

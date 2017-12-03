@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/blob.o: src/blob.cpp.o
+
+.PHONY : src/blob.o
+
+# target to build an object file
+src/blob.cpp.o:
+	$(MAKE) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/blob.cpp.o
+.PHONY : src/blob.cpp.o
+
+src/blob.i: src/blob.cpp.i
+
+.PHONY : src/blob.i
+
+# target to preprocess a source file
+src/blob.cpp.i:
+	$(MAKE) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/blob.cpp.i
+.PHONY : src/blob.cpp.i
+
+src/blob.s: src/blob.cpp.s
+
+.PHONY : src/blob.s
+
+# target to generate assembly for a file
+src/blob.cpp.s:
+	$(MAKE) -f CMakeFiles/cnn.dir/build.make CMakeFiles/cnn.dir/src/blob.cpp.s
+.PHONY : src/blob.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/blob.o"
+	@echo "... src/blob.i"
+	@echo "... src/blob.s"
 .PHONY : help
 
 
