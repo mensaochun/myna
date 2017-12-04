@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/mensaochun/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/pi/clion-2017.2.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/mensaochun/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/pi/clion-2017.2.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mensaochun/CLionProjects/myna/cnn
+CMAKE_SOURCE_DIR = /home/pi/CLionProjects/myna/cnn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pi/CLionProjects/myna/cnn/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cnn.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cnn.dir/flags.make
 
 CMakeFiles/cnn.dir/main.cpp.o: CMakeFiles/cnn.dir/flags.make
 CMakeFiles/cnn.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cnn.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cnn.dir/main.cpp.o -c /home/mensaochun/CLionProjects/myna/cnn/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cnn.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cnn.dir/main.cpp.o -c /home/pi/CLionProjects/myna/cnn/main.cpp
 
 CMakeFiles/cnn.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnn.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mensaochun/CLionProjects/myna/cnn/main.cpp > CMakeFiles/cnn.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/CLionProjects/myna/cnn/main.cpp > CMakeFiles/cnn.dir/main.cpp.i
 
 CMakeFiles/cnn.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnn.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mensaochun/CLionProjects/myna/cnn/main.cpp -o CMakeFiles/cnn.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/CLionProjects/myna/cnn/main.cpp -o CMakeFiles/cnn.dir/main.cpp.s
 
 CMakeFiles/cnn.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/cnn.dir/main.cpp.o.provides.build: CMakeFiles/cnn.dir/main.cpp.o
 
 CMakeFiles/cnn.dir/src/blob.cpp.o: CMakeFiles/cnn.dir/flags.make
 CMakeFiles/cnn.dir/src/blob.cpp.o: ../src/blob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cnn.dir/src/blob.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cnn.dir/src/blob.cpp.o -c /home/mensaochun/CLionProjects/myna/cnn/src/blob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cnn.dir/src/blob.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cnn.dir/src/blob.cpp.o -c /home/pi/CLionProjects/myna/cnn/src/blob.cpp
 
 CMakeFiles/cnn.dir/src/blob.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnn.dir/src/blob.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mensaochun/CLionProjects/myna/cnn/src/blob.cpp > CMakeFiles/cnn.dir/src/blob.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/CLionProjects/myna/cnn/src/blob.cpp > CMakeFiles/cnn.dir/src/blob.cpp.i
 
 CMakeFiles/cnn.dir/src/blob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnn.dir/src/blob.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mensaochun/CLionProjects/myna/cnn/src/blob.cpp -o CMakeFiles/cnn.dir/src/blob.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/CLionProjects/myna/cnn/src/blob.cpp -o CMakeFiles/cnn.dir/src/blob.cpp.s
 
 CMakeFiles/cnn.dir/src/blob.cpp.o.requires:
 
@@ -116,9 +116,9 @@ cnn_EXTERNAL_OBJECTS =
 cnn: CMakeFiles/cnn.dir/main.cpp.o
 cnn: CMakeFiles/cnn.dir/src/blob.cpp.o
 cnn: CMakeFiles/cnn.dir/build.make
-cnn: /usr/local/lib/libarmadillo.so
+cnn: /usr/lib/libarmadillo.so
 cnn: CMakeFiles/cnn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cnn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable cnn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cnn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/cnn.dir/clean:
 .PHONY : CMakeFiles/cnn.dir/clean
 
 CMakeFiles/cnn.dir/depend:
-	cd /home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mensaochun/CLionProjects/myna/cnn /home/mensaochun/CLionProjects/myna/cnn /home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug /home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug /home/mensaochun/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles/cnn.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/CLionProjects/myna/cnn/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/CLionProjects/myna/cnn /home/pi/CLionProjects/myna/cnn /home/pi/CLionProjects/myna/cnn/cmake-build-debug /home/pi/CLionProjects/myna/cnn/cmake-build-debug /home/pi/CLionProjects/myna/cnn/cmake-build-debug/CMakeFiles/cnn.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cnn.dir/depend
 

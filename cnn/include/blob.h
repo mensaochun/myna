@@ -15,12 +15,24 @@ using namespace arma;
 class Blob{
 public:
     Blob(int numSamples,int numChannels,int height,int width);
+    Blob(vector<int> shape);
     ~Blob() = default;
 
     //运算符重载
-//    Blob operator+(const Blob &A);
-    int get_numSamples();
-    vector<cube> getData();
+    Blob operator+(const Blob &A);
+    cube operator[](const int &i);
+    friend Blob Blob::operator+(const Blob &A,const int i);
+
+
+
+    int getNumSamples() const;
+    int getNumChannels() const;
+    int getWidth() const;
+    int getHeight() const;
+    vector<int> getShape() const;
+
+
+    vector<cube> getData() const;
     //Blob operator+(const Blob &A,const Blob &B);
 //    friend ostream operator<<(ostream &out,Blob &A);
     void print();

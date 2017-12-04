@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/cnn.dir/main.cpp.o CMakeFiles/cnn.dir/src/blob.cpp.o  -o cnn -Wl,-rpath,/usr/local/lib /usr/local/lib/libarmadillo.so 
+/usr/bin/c++  -g   CMakeFiles/cnn.dir/main.cpp.o CMakeFiles/cnn.dir/src/blob.cpp.o  -o cnn /usr/lib/libarmadillo.so 
