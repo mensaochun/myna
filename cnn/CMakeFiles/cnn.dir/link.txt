@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/cnn.dir/main.cpp.o CMakeFiles/cnn.dir/src/blob.cpp.o  -o cnn /usr/lib/libarmadillo.so 

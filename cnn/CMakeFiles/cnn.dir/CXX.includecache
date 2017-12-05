@@ -13,6 +13,8 @@ armadillo
 -
 iostream
 -
+assert.h
+-
 
 /home/pi/CLionProjects/myna/cnn/include/blob.h
 vector
@@ -20,6 +22,8 @@ vector
 armadillo
 -
 iostream
+-
+assert.h
 -
 
 /home/pi/CLionProjects/myna/cnn/main.cpp

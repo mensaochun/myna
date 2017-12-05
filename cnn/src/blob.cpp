@@ -4,15 +4,40 @@
 
 #include "../include/blob.h"
 
-Blob::Blob(int numSamples, int numChannels, int height, int width) : numSamples(numSamples), numChannels(numChannels),
-                                                                     height(height), width(width) {
-    this->data = vector<cube>(numSamples, cube(height, width, numChannels, fill::zeros));
-
-}
-Blob::Blob(vector<int> shape) {
-    this->data = vector<cube>(shape[0], cube(shape[1], shape[2], shape[3],fill::zeros));
+//构造函数
+Blob::Blob(int numSamples, int height, int width, int numChannels, FILLTYPE filltype) : numSamples(
+        numSamples), height(height), width(width), numChannels(numChannels) {
+    arma_rng::set_seed_random();
+    this->fill(numSamples, height, width, numChannels, filltype);
 }
 
+Blob::Blob(vector<int> shape, FILLTYPE filltype) : numSamples(shape[0]), height(shape[1]), width(shape[2]),
+                                                   numChannels(shape[3]) {
+    arma_rng::set_seed_random();
+    this->fill(numSamples, height, width, numChannels, filltype);
+}
+
+//initialize blob
+void Blob::fill(int numSamples, int height, int width, int numChannels, FILLTYPE filltype) {
+    if (filltype == FILLTYPE::DEFAULT) {
+        this->data = vector<cube>(numSamples, cube(height, width, numChannels));
+    } else if (filltype == FILLTYPE::ZEROS) {
+        this->data = vector<cube>(numSamples, cube(height, width, numChannels, fill::zeros));
+    } else if (filltype == FILLTYPE::ONES) {
+        this->data = vector<cube>(numSamples, cube(height, width, numChannels, fill::ones));
+    } else if (filltype == FILLTYPE::RANDU) {
+        for (int i = 0; i < this->numSamples; i++) {
+            this->data.push_back(cube(height,width,numChannels,fill::randu));
+        }
+
+    } else if(filltype==FILLTYPE::RANDN){
+        for (int i = 0; i < this->numSamples; i++) {
+            this->data.push_back(cube(height,width,numChannels,fill::randn));
+        }
+    }
+}
+
+//getter
 int Blob::getNumSamples() const {
     return this->numSamples;
 }
@@ -30,7 +55,6 @@ int Blob::getHeight() const {
 }
 
 
-
 vector<int> Blob::getShape() const {
     vector<int> shape{this->numSamples, this->numChannels, this->height, this->width};
     return shape;
@@ -41,8 +65,13 @@ vector<cube> Blob::getData() const {
 }
 
 //运算符重载
-
-Blob Blob::operator+(const Blob &A) {
+Blob& Blob::operator=(double num){
+    for (int i=0;i<numSamples;i++){
+        (*this)[i].fill(num);
+    }
+    return *this;
+}
+Blob Blob::operator+(Blob &A) {
     Blob out(this->getShape());
     for (int i = 0; i < A.getNumSamples(); i++) {
         out[i] = this->data[i] + A[i];
@@ -50,29 +79,103 @@ Blob Blob::operator+(const Blob &A) {
     return out;
 }
 
-cube Blob::operator[](const int &i){
+cube Blob::operator[](const int &i) {
     return this->data[i];
 }
 
-Blob operator+(const Blob &A,const double &i){
+Blob operator+(Blob &A, const double &num) {
     Blob out(A.getShape());
-    int N=A.getNumSamples();
-    for(int i=0;i<N;i++){
-        out[i]=
+    int N = A.getNumSamples();
+    for (int i = 0; i < N; i++) {
+        out[i] = A[i] + num;
     }
-    cube I(A.numChannels,A.height,A.width,(fill::ones)*i);
-
+    return out;
 }
 
-//friend ostream operator<<(ostream &out, Blob &A) {
-//    for (int i = 0; i < A.get_numSamples(); i++) {
-//        vector<cube> data = A.getData();
-//        out << "sample i:" << data[i];
-//        return out;
-//    }
-//
-//}
+Blob operator+(const double &num, Blob &A) {
+    Blob out(A.getShape());
+    int N = A.getNumSamples();
+    for (int i = 0; i < N; i++) {
+        out[i] = A[i] + num;
+    }
+    return out;
+}
 
+Blob operator-(Blob &A, const double &num) {
+    Blob out(A.getShape());
+    int N = A.getNumSamples();
+    for (int i = 0; i < N; i++) {
+        out[i] = A[i] - num;
+    }
+    return out;
+}
+
+Blob operator-(const double &num, Blob &A) {
+    Blob out(A.getShape());
+    int N = A.getNumSamples();
+    for (int i = 0; i < N; i++) {
+        out[i] = num - A[i];
+    }
+    return out;
+}
+
+Blob operator-(Blob &A, Blob &B){
+    assert(A.getShape()==B.getShape());
+    Blob out(A.getShape());
+    int N = A.getNumSamples();
+    for (int i = 0; i < N; i++) {
+        out[i] = A[i] - B[i];
+    }
+    return out;
+}
+
+Blob operator*(Blob &A, double num){
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=(A[i])*num;
+    }
+    return out;
+}
+Blob operator*(const double &num, Blob &A){
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=(A[i])*num;
+    }
+    return out;
+}
+Blob operator*(Blob &A, Blob &B){
+    assert(A.getShape()==B.getShape());
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=A[i]%B[i];
+    }
+    return out;
+}
+Blob operator/(Blob &A, const double &num){
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=A[i]/num;
+    }
+    return out;
+}
+Blob operator/(const double &num, Blob &A){
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=A[i]/num;
+    }
+    return out;
+}
+Blob operator/(Blob &A, Blob &B){
+    assert(A.getShape()!=B.getShape());
+    Blob out(A.getShape());
+    for(int i=0;i<A.numSamples;i++){
+        out[i]=A[i]/B[i];
+    }
+    return out;
+}
+
+
+// printer
 void Blob::print() {
     for (int i = 0; i < (this->getNumSamples()); i++) {
         vector<cube> data = this->getData();
