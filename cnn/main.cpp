@@ -1,6 +1,3 @@
-//#include <vector>
-//#include <iostream>
-//#include <armadillo>
 #include "./include/blob.h"
 
 using namespace std;
@@ -10,51 +7,40 @@ using std::vector;
 using namespace arma;
 
 int main() {
-
-
-
-
-//    double b=3.0;
-//    Blob c = b-a;
+//    Blob a(1, 2, 3, 4, FILLTYPE::RANDN);
+//    Blob b(1, 2, 3, 4, FILLTYPE::ONES);
+//    Blob c=a.max(1);
 //    c.print();
+////    Blob c(1, 2, 3, 4, FILLTYPE::RANDN);
+//    //Blob d(1, 2, 3, 4, FILLTYPE::RANDU);
+//    //Blob e(1, 2, 3, 4);
+//    //Blob sum_blob = a + b;
+//    Blob c=0.1/b;
+//    c.print();
+//    double num = 3;
+//    Blob numBlob = num+c;
+//    numBlob.print();
+    ////sum_blob.print();
+    //numBlob.print();
 
+    /*vector<int> vec{ 1,2,3,4,5 };
+    for (int i = 0;i < vec.size();i++) {
+        cout << vec[i];
+    }
+    for (int i = 0;i < vec.size();i++) {
+        vec[i] = 3;
+    }
+    for (int i = 0;i < vec.size();i++) {
+        cout << vec[i];
+    }*/
 
-//    cout<<zeros+1;
-
-//    Blob b=Blob(1,2,3,4);
-//    b.print();
-//    vector<int> a{3,2,3,4};
-//    cout<<a[0];
-    //Blob b=Blob(a,FILLTYPE::RANDN);
-//    Blob b(1,2,3,4,FILLTYPE::RANDU);
-//    b.print();
-//    cube a=cube(1,2,3);
-//    double b=1.0;
-//    (a+b).print();
-//    (cube(2,2,2,fill::randu)).print();
-//    vector<int> data;
-
-    //Blob +
-//    Blob a(1,2,3,4);
-//    Blob b(1,2,3,4);
-//    double num;
-//    (a+num).print();
-//    (num+a).print();
-//    (a+b).print();
-
-    //Blob /
-    Blob a(1,2,3,4,FILLTYPE::ONES);
-    Blob b(1,2,3,4,FILLTYPE::ONES);
-    Blob c(1,2,3,4);
-    c=3.0;
+    /*a.print();
+    b.print();
     c.print();
-    a.print();
-//    b.print();
-    Blob d=c-a;
     d.print();
-//    double num=2.0;
-//    (b/c).print();
-
+    e.print();*/
+    arma::cube a=randn<arma::cube>(2,3,3);
+//    arma::max(a);
 
 
 }
