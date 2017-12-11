@@ -1,4 +1,0 @@
-/home/pi/clion-2017.2.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pi/CLionProjects/myna/cnn
--- Configuring done
--- Generating done
--- Build files have been written to: /home/pi/CLionProjects/myna/cnn
