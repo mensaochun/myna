@@ -1,3 +1,0 @@
-/home/pi/CLionProjects/myna/cnn/CMakeFiles/rebuild_cache.dir
-/home/pi/CLionProjects/myna/cnn/CMakeFiles/edit_cache.dir
-/home/pi/CLionProjects/myna/cnn/CMakeFiles/cnn.dir
