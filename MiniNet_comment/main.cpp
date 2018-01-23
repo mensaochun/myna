@@ -4,7 +4,7 @@
 * \brief for mnist example
 */
 
-#include "../include/mini_net.hpp"
+#include "./include/mini_net.hpp"
 #include <iostream>
 #include <vector>
 #include <fstream>
