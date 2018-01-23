@@ -1,3 +1,9 @@
+/*!
+*  Copyright (c) 2015 by hgaolbb
+* \file layer.cpp
+* \brief all layers implement
+*/
+
 #include "../include/layer.hpp"
 
 namespace mini_net {
@@ -204,9 +210,14 @@ void PoolLayer::forward(const vector<shared_ptr<Blob>>& in,
         for (int c = 0; c < C; ++c) {
             for (int hh = 0; hh < Hy; ++hh) {
                 for (int ww = 0; ww < Wy; ++ww) {
-                    (*out)[n](hh, ww, c) = (*in[0])[n](span(hh * stride, hh * stride + height - 1),
-                                                        span(ww * stride, ww * stride + width - 1),
-                                                        span(c, c)).max();
+                	arma::cube cube_ = (*in[0])[n];
+                    arma::mat mat_ = cube_(span(hh * stride, hh * stride + height - 1),
+                                               span(ww * stride, ww * stride + width - 1), span(c, c));
+                    double mat_max=mat_.max();
+                    (*out)[n](hh, ww, c)=mat_max;
+                    // (*out)[n](hh, ww, c) = (*in[0])[n](span(hh * stride, hh * stride + height - 1),
+                    //                                     span(ww * stride, ww * stride + width - 1),
+                    //                                     span(c, c)).max();
                 }
             }
         }

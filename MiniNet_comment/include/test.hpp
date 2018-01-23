@@ -1,3 +1,8 @@
+/*!
+*  Copyright (c) 2015 by hgaolbb
+* \file test.hpp
+* \brief all layers implement
+*/
 
 #ifndef MINI_NET_TEST_HPP_
 #define MINI_NET_TEST_HPP_

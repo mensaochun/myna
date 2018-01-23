@@ -1,4 +1,8 @@
-
+/*!
+*  Copyright (c) 2015 by hgaolbb
+* \file net.hpp
+* \brief 
+*/
 
 #ifndef MINI_NET_NET_HPP_
 #define MINI_NET_NET_HPP_

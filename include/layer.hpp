@@ -1,3 +1,8 @@
+/*!
+*  Copyright (c) 2015 by hgaolbb
+* \file layer.hpp
+* \brief all layers implement
+*/
 
 #ifndef MINI_NET_LAYER_HPP_
 #define MINI_NET_LAYER_HPP_
@@ -61,17 +66,6 @@ public:
 
     /*!
     * \brief forward
-    * Blob bottom[0]:                                                                 Blob blob_[0]:weight
-    *     _______          _______         __  _______________________         __      __  _______________________          __
-    *  C /______/|   N    /______/|        |  |_______________________| __      |      |  |_______________________| __       |
-    *   |------||| ······|------|||   ===> |          ...                |      |   *  |            ...              |       | . T() + b
-    * H |------|||       |------|||   ===> |   _______________________    > N   |      |   _______________________    > F    |
-    *   |------|/        |------|/         |_ |_______________________| _|     _|      |_ |_______________________| _|      _|
-    *      W                                                                                         
-    *   \___________  __________/             \___________  __________/                  \___________  __________/          
-    *               \/                                    \/                                         \/
-    *           [N,C,H,W]                               C*H*W                                       C*H*N
-    *
     *             X:        [N, C, Hx, Wx]
     *             weight:   [F, C, Hw, Ww]
     *             bias:     [F, 1, 1, 1]
@@ -110,7 +104,7 @@ public:
     *             X:        [N, C, Hx, Wx]
     *             weight:   [F, C, Hw, Ww]
     *             bias:     [F, 1, 1, 1]
-    *             out:      [N, F, (Hx+pad*2-Hw)/stride+1, (Wx+pad*2-Ww)/stride+1]
+    *             out:      [N, F, 1, 1]
     * \param[in]  const vector<Blob*>& in       in[0]:X, in[1]:weights, in[2]:bias
     * \param[in]  const ConvParam* param        conv params
     * \param[out] Blob& out                     Y
@@ -124,7 +118,7 @@ public:
     *             in:       [N, C, Hx, Wx]
     *             weight:   [F, C, Hw, Ww]
     *             bias:     [F, 1, 1, 1]
-    *             dout:     [N, F, (Hx+pad*2-Hw)/stride+1, (Wx+pad*2-Ww)/stride+1]
+    *             dout:     [N, F, 1, 1]
     * \param[in]  const Blob* dout              dout
     * \param[in]  const vector<Blob*>& cache    cache[0]:X, cache[1]:weights, cache[2]:bias
     * \param[out] vector<Blob*>& grads          grads[0]:dX, grads[1]:dW, grads[2]:db
