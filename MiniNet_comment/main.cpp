@@ -105,14 +105,16 @@ int main(int argc, char** argv) {
 //        help();
 //        return -1;
 //    }
-    string data_path="/home/pi/stone/c++/myna/MiniNet_comment/example/t10k-images-idx3-ubyte";
-    string label_path="/home/pi/stone/c++/myna/MiniNet_comment/example/t10k-labels-idx1-ubyte";
-    string config_path="/home/pi/stone/c++/myna/MiniNet_comment/example/mnist.json";
-    shared_ptr<Blob> images(new Blob(10000,1,28,28));
-    shared_ptr<Blob> labels(new Blob(10000,10,1,1,TZEROS));
-    ReadMnistData(data_path, images);
-    ReadMnistLabel(label_path, labels);
-    trainMnist(images, labels, config_path);
+//    string data_path="/home/pi/stone/c++/myna/MiniNet_comment/example/t10k-images-idx3-ubyte";
+//    string label_path="/home/pi/stone/c++/myna/MiniNet_comment/example/t10k-labels-idx1-ubyte";
+//    string config_path="/home/pi/stone/c++/myna/MiniNet_comment/example/mnist.json";
+//    shared_ptr<Blob> images(new Blob(10000,1,28,28));
+//    shared_ptr<Blob> labels(new Blob(10000,10,1,1,TZEROS));
+//    ReadMnistData(data_path, images);
+//    ReadMnistLabel(label_path, labels);
+//    trainMnist(images, labels, config_path);
+    int a;
+    cout<<a;
 
     return 0;
 }
