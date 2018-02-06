@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread -std=c++11 -g   CMakeFiles/tiny_cnn_comment.dir/main.cpp.o  -o tiny_cnn_comment 

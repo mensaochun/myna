@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.9)
+project(tiny_cnn_comment)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "-pthread -std=c++11")
+include_directories(/home/pi/stone/c++/tiny-cnn-comment)
+add_executable(tiny_cnn_comment main.cpp)
