@@ -8,24 +8,36 @@
 #include <iostream>
 #include <fstream>
 #include <math.h>
+#include <map>
+#include <assert.h>
 class KNN {
 private:
-    int cols;
-    int rows;
+    // reference matrix rows and cols
+    int N;
+    int num_train;
+    int num_features;
+    int num_test;
+    // select k nearest neighbors
     int k;
+    // reference data, here represent it by name train
     double **train_X;
-    char *train_lable;
-
-    bool read_data(std::string file_path);
-
+    int *train_lable;// int indexes
+    // test data
+    double **test_X;
+    int *test_lable;
 
 public:
-    KNN(int rows, int cols, std::string file_path);
+    KNN(int N, int num_features, double train_ratio, int k, std::string file_path);
     ~KNN();
-    void compute_distance(double *test_x, double *distances);
-    void show_data();
-    void bubble_sort(double *distances,char *sort_lable);
-    void show_result();
+    // read data from txt file and split it for reference and test data
+    bool prepare_data(std::string file_path);
+    void normalize_data();
+    double* compute_distance(double *test_x);
+    int inference_one(int *sort_lables);
+    double inference_all();
+    void show_data(std::string type);
+    int* bubble_sort(double *distances);
+
 };
 
 #endif //KNN_KNN_H
