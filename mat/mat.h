@@ -8,15 +8,14 @@
 #define MATTEMPLATE template<typename T>
 
 #include <iostream>
-
-
-MATTEMPLATE
-enum INITTYPE{
-    std ZEROS;
-    ONES;
-    RANDOMS;
+enum INITTYPE {
+	NONE,
+	ZEROS,
+	ONES,
+	RANDOMS
 };
 
+MATTEMPLATE
 class Mat {
 private:
     int cols;
@@ -24,41 +23,12 @@ private:
     T **data;
 
 public:
-    Mat(int rows,int cols) {
-        this->rows=rows;
-        this->cols=cols;
-        // allocate memory
-        this->data=new T*[this->rows];// create pointer array
-        for(int i=0;i<rows;i++){
-            this->data[i]=new T[this->cols];
-        }
-        // init with zeros
-        for(int i=0;i<this->cols;i++){
-            for(int j=0;j<this->rows;j++){
-                this->data[i][j]=0;
-            }
-        }
-    }
-
-    Mat(int rows,int cols) {
-        this->rows=rows;
-        this->cols=cols;
-        // allocate memory
-        this->data=new T*[this->rows];// create pointer array
-        for(int i=0;i<rows;i++){
-            this->data[i]=new T[this->cols];
-        }
-        // init with zeros
-        for(int i=0;i<this->cols;i++){
-            for(int j=0;j<this->rows;j++){
-                this->data[i][j]=0;
-            }
-        }
-    }
-
-    Mat<T> operator+(const Mat<T> &A){
-        Mat<T> B(this->rows,this->cols);
-    }
+	Mat(int rows, int cols, INITTYPE type = INITTYPE::ZEROS);
+	~Mat();
+	T* operator[](int i);
+	Mat<T> operator+(const Mat<T> &A);
+	// TODO: const pointer?
+	const T* Mat<T>::operator[](int i) const;
 };
 
 
