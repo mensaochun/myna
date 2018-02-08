@@ -1,4 +1,4 @@
-
+![icon](./pics/icon.png)
 
 ### Introduction
 
