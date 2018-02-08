@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/stone/c++/myna/mat/main.cpp
+iostream
+-
+math.h
+/home/pi/stone/c++/myna/mat/math.h
+mat.h
+/home/pi/stone/c++/myna/mat/mat.h
+
+/home/pi/stone/c++/myna/mat/mat.cpp
+
+/home/pi/stone/c++/myna/mat/mat.h
+iostream
+-
+

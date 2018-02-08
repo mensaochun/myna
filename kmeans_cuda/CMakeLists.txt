@@ -3,4 +3,4 @@ project(kmeans_cxx)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(kmeans_cxx main.cpp)
+add_executable(kmeans_cxx main.cpp ./include/kmeans.h ./src/kmeans.cpp)
