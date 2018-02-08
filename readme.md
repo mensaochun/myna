@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is a machine learing library written in c++, which will be updated when i am not busy.
+This is a machine learing library written in c++, which will be updated when I am not busy.
 
 ### Armadillo install
 
