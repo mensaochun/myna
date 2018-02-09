@@ -3,6 +3,4 @@
 
 CMakeFiles/mat.dir/main.cpp.o
  /home/pi/stone/c++/myna/mat/main.cpp
- /home/pi/stone/c++/myna/mat/mat.h
-CMakeFiles/mat.dir/mat.cpp.o
- /home/pi/stone/c++/myna/mat/mat.cpp
+ /home/pi/stone/c++/myna/mat/mat_vector.h

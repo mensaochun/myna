@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/mat.dir/build.make CMakeFiles/mat.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mat.o: mat.cpp.o
-
-.PHONY : mat.o
-
-# target to build an object file
-mat.cpp.o:
-	$(MAKE) -f CMakeFiles/mat.dir/build.make CMakeFiles/mat.dir/mat.cpp.o
-.PHONY : mat.cpp.o
-
-mat.i: mat.cpp.i
-
-.PHONY : mat.i
-
-# target to preprocess a source file
-mat.cpp.i:
-	$(MAKE) -f CMakeFiles/mat.dir/build.make CMakeFiles/mat.dir/mat.cpp.i
-.PHONY : mat.cpp.i
-
-mat.s: mat.cpp.s
-
-.PHONY : mat.s
-
-# target to generate assembly for a file
-mat.cpp.s:
-	$(MAKE) -f CMakeFiles/mat.dir/build.make CMakeFiles/mat.dir/mat.cpp.s
-.PHONY : mat.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +162,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mat.o"
-	@echo "... mat.i"
-	@echo "... mat.s"
 .PHONY : help
 
 

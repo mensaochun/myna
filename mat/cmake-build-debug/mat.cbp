@@ -87,10 +87,10 @@
 		<Unit filename="/home/pi/stone/c++/myna/mat/main.cpp">
 			<Option target="mat"/>
 		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/mat/mat.cpp">
+		<Unit filename="/home/pi/stone/c++/myna/mat/mat_array.h">
 			<Option target="mat"/>
 		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/mat/mat.h">
+		<Unit filename="/home/pi/stone/c++/myna/mat/mat_vector.h">
 			<Option target="mat"/>
 		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/mat/CMakeLists.txt">

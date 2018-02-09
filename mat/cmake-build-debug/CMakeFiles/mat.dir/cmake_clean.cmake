@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mat.dir/main.cpp.o"
-  "CMakeFiles/mat.dir/mat.cpp.o"
   "mat.pdb"
   "mat"
 )

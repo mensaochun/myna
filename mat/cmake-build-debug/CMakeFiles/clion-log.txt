@@ -1,4 +1,5 @@
 /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pi/stone/c++/myna/mat
+-- Found Armadillo: /usr/lib/libarmadillo.so (found version "4.200.0") 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/pi/stone/c++/myna/mat/cmake-build-debug

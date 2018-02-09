@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/mat.dir/main.cpp.o CMakeFiles/mat.dir/mat.cpp.o  -o mat 
+/usr/bin/c++  -g   CMakeFiles/mat.dir/main.cpp.o  -o mat /usr/lib/libarmadillo.so 
