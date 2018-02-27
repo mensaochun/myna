@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/stone/c++/myna/perceptron/main.cpp
+perceptron.h
+/home/pi/stone/c++/myna/perceptron/perceptron.h
+
+/home/pi/stone/c++/myna/perceptron/perceptron.cpp
+perceptron.h
+/home/pi/stone/c++/myna/perceptron/perceptron.h
+iostream
+-
+
+/home/pi/stone/c++/myna/perceptron/perceptron.h
+vector
+-
+
