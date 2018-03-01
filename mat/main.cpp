@@ -1,5 +1,5 @@
-#include "mat_vector.h"
+#include "mat_array.h"
 int main() {
-    test();
+	test_operator_bracket();
 
 }
