@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/linear_regression.dir/main.cpp.o CMakeFiles/linear_regression.dir/linear_regression.cpp.o  -o linear_regression 

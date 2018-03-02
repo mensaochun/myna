@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/stone/c++/myna/linear_regression/linear_regression.cpp
+linear_regression.h
+/home/pi/stone/c++/myna/linear_regression/linear_regression.h
+iostream
+-
+
+/home/pi/stone/c++/myna/linear_regression/linear_regression.h
+vector
+-
+
+/home/pi/stone/c++/myna/linear_regression/main.cpp
+linear_regression.h
+/home/pi/stone/c++/myna/linear_regression/linear_regression.h
+

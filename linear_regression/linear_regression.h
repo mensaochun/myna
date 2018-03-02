@@ -9,7 +9,7 @@
 
 using std::vector;
 
-void getTraingData(vector<vector<double>> &X, vector<int> &Y);
+void getTraingData(vector<vector<double>> &X, vector<double> &Y);
 
 void testLinearRegression();
 
