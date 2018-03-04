@@ -1,0 +1,25 @@
+﻿生成启动时间为 2014/8/19 14:02:13。
+     1>项目“C:\Users\smartphone\documents\visual studio 2010\Projects\链表\链表\链表.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\链表.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\链表.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ilist.cpp main.cpp
+         main.cpp
+         ilist.cpp
+         正在生成代码...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\smartphone\documents\visual studio 2010\Projects\链表\Debug\链表.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\链表.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\smartphone\documents\visual studio 2010\Projects\链表\Debug\链表.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\smartphone\documents\visual studio 2010\Projects\链表\Debug\链表.lib" /MACHINE:X86 Debug\ilist.obj
+         Debug\main.obj
+         链表.vcxproj -> C:\Users\smartphone\documents\visual studio 2010\Projects\链表\Debug\链表.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\Users\smartphone\documents\visual studio 2010\Projects\链表\Debug\链表.exe.manifest" /manifest "Debug\链表.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Debug\链表.unsuccessfulbuild”。
+         正在对“Debug\链表.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\smartphone\documents\visual studio 2010\Projects\链表\链表\链表.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.09
