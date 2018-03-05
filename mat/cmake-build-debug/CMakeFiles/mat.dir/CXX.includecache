@@ -7,13 +7,11 @@
 #IncludeRegexTransform: 
 
 /home/pi/stone/c++/myna/mat/main.cpp
-mat_vector.h
-/home/pi/stone/c++/myna/mat/mat_vector.h
+mat_array.h
+/home/pi/stone/c++/myna/mat/mat_array.h
 
-/home/pi/stone/c++/myna/mat/mat_vector.h
+/home/pi/stone/c++/myna/mat/mat_array.h
 iostream
--
-vector
 -
 assert.h
 /home/pi/stone/c++/myna/mat/assert.h
