@@ -3,28 +3,54 @@
  * Date:20180302.
 */
 
+#ifndef NODE_H
+#define NODE_H
+#include"connection.h"
+#include <vector>
+using std::vector;
 class Node {
-protected:
+private:
 	int layerIdx;
 	int nodeIdx;
+	vector<Connection> preConns;
+	vector<Connection> nextConns;d
+	double output;
+	double delta;
 public:
+	Node();
 	Node(int layerIdx,int nodeIdx);
-	// pure virtual function.
-	// virtual double output() =0;
+	void addPreConn();
+	void addNextConn();
+	void calOutput();
+	void calHiddenDelta();
+	void calOutputDelta();
+	
 };
+
+Node::Node(){
+	this->output = 0.0;
+	this->delta = 0.0;
+}
 Node::Node(int layerIdx, int nodeIdx){
 	this->layerIdx = layerIdx;
 	this->nodeIdx = nodeIdx;
+	this->output = 0.0;
+	this->delta = 0.0;
 }
 
-class HiddenNode :public Node {
-private:
-	List preNodes;
-	List nextNodes;
-	double out;
-	double delta;
-public:
-	HiddenNode();
-	template<typename T> void addPreConn(const T &node);
-	template<typename T> void addNextConn(const T &node);
-};
+void Node::addPreConn() {
+	pre
+}
+void Node::addNextConn() {
+}
+void Node::calOutput() {
+
+}
+void Node::calHiddenDelta() {
+
+}
+void Node::calOutputDelta() {
+
+}
+
+#endif //NODE_H

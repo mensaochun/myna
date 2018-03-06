@@ -2,12 +2,31 @@
  * Created by yourenchun.
  * Date:20180302.
 */
-
-template<typename T1,typename T2>
+#ifndef CONNECTION_H
+#define CONNECTION_H
+#include"node.h"
 class Connection {
 private:
-	T1 preNode;
-	T2 nextNode;
+	Node preNode;
+	Node nextNode;
+	double weight;
+	double gradient;
+	void calGradient();
 public:
+	Connection(Node preNode, Node nextNode);
+	~Connection();
+	void getGradient();
+	void update_weight();
 
 };
+
+Connection::Connection(Node preNode,Node nextNode) {
+	this->preNode = preNode;
+	this->nextNode = nextNode;
+}
+
+
+void Connection::calGradient() {
+
+}
+#endif CONNECTION_H
