@@ -19,13 +19,14 @@ private:
     Mat<double> Y;// same as X.
     vector<BaseLayer *> layerList;
 public:
+    Net();
     Net(Mat<double> &X,Mat<double> &Y);
 
     void addInputLayer(const Mat<double> &X);
 
     void addFullyConnectedLayer(int numIn, int numOut);
 
-    void addSigmoidLayer(int numIn, int numOut);
+    void addSigmoidLayer(int numIn, int numOut,const Mat<double> &Y);
 
     void step();
 

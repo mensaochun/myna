@@ -16,20 +16,25 @@ class BaseLayer {
 protected:
     Mat<double> input;
     Mat<double> output;
+    Mat<double> weight;
+    Mat<double> delta;
+    Mat<double> gradient;
 
 public:
     virtual void setInput(const Mat<double> &in);
+    virtual Mat<double> & getDelta();
     virtual Mat<double> & getOutput();
     virtual void forward();
-    virtual void backword(const Mat<double> &nextDelta);
-    virtual void backword(const Mat<double> &nextDelta,const Mat<double> &target);
+    virtual void backward();
+    virtual void backward(const Mat<double> &nextDelta);
+    virtual void updateWeight(const Mat<double> &gradient,double learningRate);
+
 };
 
 // ---------------InputLayer-----------------
 class InputLayer : public BaseLayer {
 
 public:
-    InputLayer(const Mat<double> &in);
     virtual Mat<double> & getOutput();
 };
 
@@ -37,9 +42,6 @@ public:
 // ---------------FullyConnectedLayer-----------------
 class FullyConnectedLayer : public BaseLayer {
 private:
-    Mat<double> delta;
-    Mat<double> gradient;
-    Mat<double> weight;
     ptrActivation activationFunction;
 public:
     FullyConnectedLayer(int numIn, int numOut,ptrActivation pf);
@@ -58,9 +60,8 @@ private:
     Mat<double> Y;
 public:
     SigmoidLayer(int numIn,int numOut,const Mat<double> &Y);
-    const Mat<double> & setTarget(const Mat<double> &Y);
     virtual void forward();
-    virtual void backward(const Mat<double> &nextDelta,const Mat<double> &target);
+    virtual void backward();
 
 };
 

@@ -6,39 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/stone/c++/myna/fc_vec/activation.h
-mat_array.h
-/home/pi/stone/c++/myna/fc_vec/mat_array.h
-math.h
--
-
-/home/pi/stone/c++/myna/fc_vec/layer.h
-mat_array.h
-/home/pi/stone/c++/myna/fc_vec/mat_array.h
-
-/home/pi/stone/c++/myna/fc_vec/main.cpp
-iostream
--
-activation.h
-/home/pi/stone/c++/myna/fc_vec/activation.h
+E:/c++/myna/fc_vec/layer.cpp
 layer.h
-/home/pi/stone/c++/myna/fc_vec/layer.h
-net.h
-/home/pi/stone/c++/myna/fc_vec/net.h
-mat_array.h
-/home/pi/stone/c++/myna/fc_vec/mat_array.h
+E:/c++/myna/fc_vec/layer.h
 
-/home/pi/stone/c++/myna/fc_vec/mat_array.h
+E:/c++/myna/fc_vec/layer.h
+mat.h
+E:/c++/myna/fc_vec/mat.h
+utils.h
+E:/c++/myna/fc_vec/utils.h
+
+E:/c++/myna/fc_vec/main.cpp
+net.h
+E:/c++/myna/fc_vec/net.h
+
+E:/c++/myna/fc_vec/mat.h
 iostream
 -
 assert.h
-/home/pi/stone/c++/myna/fc_vec/assert.h
+E:/c++/myna/fc_vec/assert.h
 
-/home/pi/stone/c++/myna/fc_vec/net.h
-activation.h
-/home/pi/stone/c++/myna/fc_vec/activation.h
+E:/c++/myna/fc_vec/net.cpp
+net.h
+E:/c++/myna/fc_vec/net.h
+
+E:/c++/myna/fc_vec/net.h
+utils.h
+E:/c++/myna/fc_vec/utils.h
 layer.h
-/home/pi/stone/c++/myna/fc_vec/layer.h
+E:/c++/myna/fc_vec/layer.h
 vector
+-
+
+E:/c++/myna/fc_vec/utils.h
+mat.h
+E:/c++/myna/fc_vec/mat.h
+math.h
 -
 

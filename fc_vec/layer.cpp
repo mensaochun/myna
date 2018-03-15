@@ -5,21 +5,22 @@
 #include "layer.h"
 
 // BaseLayer
-void BaseLayer::forward() {}
-void BaseLayer::backword(const Mat<double> &nextDelta){};
-void BaseLayer::backword(const Mat<double> &nextDelta,const Mat<double> &target){};
 void BaseLayer::setInput(const Mat<double> &input){
     this->input=input;
 }
-
 Mat<double> & BaseLayer::getOutput() {
     return this->output;
 }
-
-// InputLayer
-InputLayer::InputLayer(const Mat<double> &in) :{
-    this->setInput(in);//TODO, virtual function can be directly called by Son class?
+Mat<double>& BaseLayer::getDelta(){
+    return this->delta;
 }
+void BaseLayer::forward(){};
+void BaseLayer::backward(){};
+void BaseLayer::backward(const Mat<double> &nextDelta){};
+void BaseLayer::updateWeight(const Mat<double> &gradient,double learningRate){
+    this->weight=this->weight+learningRate*gradient;
+}
+// InputLayer
 Mat<double>& InputLayer::getOutput() {
     return this->input;
 }
@@ -48,17 +49,14 @@ SigmoidLayer::SigmoidLayer(int numIn, int numOut,const Mat<double> &Y) {
     Mat<double> bias(numOut, 1, Fill::ZEROS);
     Mat<double> weight_ = Mat<double>(numOut, numIn, Fill::RANDOM);
     this->weight = weight_.concatenate(bias, Axis::COL);
-    this->Y=this->setTarget(Y);
+    this->Y=Y;
 }
 
-const Mat<double> & SigmoidLayer::setTarget(const Mat<double> &Y){
-    return Y;
-}
 void SigmoidLayer::forward() {
     sigmoid(this->input,this->output);
 }
 
-void SigmoidLayer::backward(const Mat<double> &nextDelta,const Mat<double> &target){
-    this->delta=this->output*(1.0-this->output)*(target-this->output);
+void SigmoidLayer::backward(){
+    this->delta=this->output*(1.0-this->output)*(this->Y-this->output);
     this->gradient=this->delta.matMul(this->input.transport());
 }
