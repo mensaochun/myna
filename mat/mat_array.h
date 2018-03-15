@@ -491,7 +491,7 @@ Mat<T> Mat<T>::min(Axis axis) {
 MATTEMPLATE
 Mat<T> Mat<T>::T(){
     Mat<T> M(this->cols,this->rows);
-    
+
 }
 
 //---------------------------test----------------

@@ -1,0 +1,4 @@
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pi/stone/c++/myna/fc_vec
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/stone/c++/myna/fc_vec/activation.h
+mat_array.h
+/home/pi/stone/c++/myna/fc_vec/mat_array.h
+math.h
+-
+
+/home/pi/stone/c++/myna/fc_vec/layer.h
+mat_array.h
+/home/pi/stone/c++/myna/fc_vec/mat_array.h
+
+/home/pi/stone/c++/myna/fc_vec/main.cpp
+iostream
+-
+activation.h
+/home/pi/stone/c++/myna/fc_vec/activation.h
+layer.h
+/home/pi/stone/c++/myna/fc_vec/layer.h
+net.h
+/home/pi/stone/c++/myna/fc_vec/net.h
+mat_array.h
+/home/pi/stone/c++/myna/fc_vec/mat_array.h
+
+/home/pi/stone/c++/myna/fc_vec/mat_array.h
+iostream
+-
+assert.h
+/home/pi/stone/c++/myna/fc_vec/assert.h
+
+/home/pi/stone/c++/myna/fc_vec/net.h
+activation.h
+/home/pi/stone/c++/myna/fc_vec/activation.h
+layer.h
+/home/pi/stone/c++/myna/fc_vec/layer.h
+vector
+-
+

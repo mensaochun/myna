@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/fc_vec.dir/main.cpp.o CMakeFiles/fc_vec.dir/layer.cpp.o CMakeFiles/fc_vec.dir/net.cpp.o  -o fc_vec 
