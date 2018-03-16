@@ -84,25 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/activation.h">
-			<Option target="fc_vec"/>
-		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/layer.cpp">
-			<Option target="fc_vec"/>
-		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/layer.h">
-			<Option target="fc_vec"/>
-		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/fc_vec/main.cpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/mat_array.h">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/mat/mat.cpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/net.cpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/mat/mat.h">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/net.h">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/mat/test_mat.cpp">
 			<Option target="fc_vec"/>
 		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/fc_vec/CMakeLists.txt">

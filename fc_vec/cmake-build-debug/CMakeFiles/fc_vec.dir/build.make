@@ -81,66 +81,66 @@ CMakeFiles/fc_vec.dir/main.cpp.o.provides: CMakeFiles/fc_vec.dir/main.cpp.o.requ
 CMakeFiles/fc_vec.dir/main.cpp.o.provides.build: CMakeFiles/fc_vec.dir/main.cpp.o
 
 
-CMakeFiles/fc_vec.dir/layer.cpp.o: CMakeFiles/fc_vec.dir/flags.make
-CMakeFiles/fc_vec.dir/layer.cpp.o: ../layer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fc_vec.dir/layer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fc_vec.dir/layer.cpp.o -c /home/pi/stone/c++/myna/fc_vec/layer.cpp
+CMakeFiles/fc_vec.dir/mat/mat.cpp.o: CMakeFiles/fc_vec.dir/flags.make
+CMakeFiles/fc_vec.dir/mat/mat.cpp.o: ../mat/mat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fc_vec.dir/mat/mat.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fc_vec.dir/mat/mat.cpp.o -c /home/pi/stone/c++/myna/fc_vec/mat/mat.cpp
 
-CMakeFiles/fc_vec.dir/layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/stone/c++/myna/fc_vec/layer.cpp > CMakeFiles/fc_vec.dir/layer.cpp.i
+CMakeFiles/fc_vec.dir/mat/mat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/mat/mat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/stone/c++/myna/fc_vec/mat/mat.cpp > CMakeFiles/fc_vec.dir/mat/mat.cpp.i
 
-CMakeFiles/fc_vec.dir/layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/stone/c++/myna/fc_vec/layer.cpp -o CMakeFiles/fc_vec.dir/layer.cpp.s
+CMakeFiles/fc_vec.dir/mat/mat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/mat/mat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/stone/c++/myna/fc_vec/mat/mat.cpp -o CMakeFiles/fc_vec.dir/mat/mat.cpp.s
 
-CMakeFiles/fc_vec.dir/layer.cpp.o.requires:
+CMakeFiles/fc_vec.dir/mat/mat.cpp.o.requires:
 
-.PHONY : CMakeFiles/fc_vec.dir/layer.cpp.o.requires
+.PHONY : CMakeFiles/fc_vec.dir/mat/mat.cpp.o.requires
 
-CMakeFiles/fc_vec.dir/layer.cpp.o.provides: CMakeFiles/fc_vec.dir/layer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/layer.cpp.o.provides.build
-.PHONY : CMakeFiles/fc_vec.dir/layer.cpp.o.provides
+CMakeFiles/fc_vec.dir/mat/mat.cpp.o.provides: CMakeFiles/fc_vec.dir/mat/mat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/mat.cpp.o.provides.build
+.PHONY : CMakeFiles/fc_vec.dir/mat/mat.cpp.o.provides
 
-CMakeFiles/fc_vec.dir/layer.cpp.o.provides.build: CMakeFiles/fc_vec.dir/layer.cpp.o
+CMakeFiles/fc_vec.dir/mat/mat.cpp.o.provides.build: CMakeFiles/fc_vec.dir/mat/mat.cpp.o
 
 
-CMakeFiles/fc_vec.dir/net.cpp.o: CMakeFiles/fc_vec.dir/flags.make
-CMakeFiles/fc_vec.dir/net.cpp.o: ../net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fc_vec.dir/net.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fc_vec.dir/net.cpp.o -c /home/pi/stone/c++/myna/fc_vec/net.cpp
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o: CMakeFiles/fc_vec.dir/flags.make
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o: ../mat/test_mat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o -c /home/pi/stone/c++/myna/fc_vec/mat/test_mat.cpp
 
-CMakeFiles/fc_vec.dir/net.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/net.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/stone/c++/myna/fc_vec/net.cpp > CMakeFiles/fc_vec.dir/net.cpp.i
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/mat/test_mat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/stone/c++/myna/fc_vec/mat/test_mat.cpp > CMakeFiles/fc_vec.dir/mat/test_mat.cpp.i
 
-CMakeFiles/fc_vec.dir/net.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/net.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/stone/c++/myna/fc_vec/net.cpp -o CMakeFiles/fc_vec.dir/net.cpp.s
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/mat/test_mat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/stone/c++/myna/fc_vec/mat/test_mat.cpp -o CMakeFiles/fc_vec.dir/mat/test_mat.cpp.s
 
-CMakeFiles/fc_vec.dir/net.cpp.o.requires:
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.requires:
 
-.PHONY : CMakeFiles/fc_vec.dir/net.cpp.o.requires
+.PHONY : CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.requires
 
-CMakeFiles/fc_vec.dir/net.cpp.o.provides: CMakeFiles/fc_vec.dir/net.cpp.o.requires
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/net.cpp.o.provides.build
-.PHONY : CMakeFiles/fc_vec.dir/net.cpp.o.provides
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.provides: CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.provides.build
+.PHONY : CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.provides
 
-CMakeFiles/fc_vec.dir/net.cpp.o.provides.build: CMakeFiles/fc_vec.dir/net.cpp.o
+CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.provides.build: CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o
 
 
 # Object files for target fc_vec
 fc_vec_OBJECTS = \
 "CMakeFiles/fc_vec.dir/main.cpp.o" \
-"CMakeFiles/fc_vec.dir/layer.cpp.o" \
-"CMakeFiles/fc_vec.dir/net.cpp.o"
+"CMakeFiles/fc_vec.dir/mat/mat.cpp.o" \
+"CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o"
 
 # External object files for target fc_vec
 fc_vec_EXTERNAL_OBJECTS =
 
 fc_vec: CMakeFiles/fc_vec.dir/main.cpp.o
-fc_vec: CMakeFiles/fc_vec.dir/layer.cpp.o
-fc_vec: CMakeFiles/fc_vec.dir/net.cpp.o
+fc_vec: CMakeFiles/fc_vec.dir/mat/mat.cpp.o
+fc_vec: CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o
 fc_vec: CMakeFiles/fc_vec.dir/build.make
 fc_vec: CMakeFiles/fc_vec.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable fc_vec"
@@ -152,8 +152,8 @@ CMakeFiles/fc_vec.dir/build: fc_vec
 .PHONY : CMakeFiles/fc_vec.dir/build
 
 CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/main.cpp.o.requires
-CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/layer.cpp.o.requires
-CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/net.cpp.o.requires
+CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/mat/mat.cpp.o.requires
+CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o.requires
 
 .PHONY : CMakeFiles/fc_vec.dir/requires
 

@@ -5,40 +5,56 @@
 #include "layer.h"
 
 // BaseLayer
-void BaseLayer::forward() {}
-void BaseLayer::backword(const Mat<double> &nextDelta){};
-void BaseLayer::backword(const Mat<double> &nextDelta,const Mat<double> &target){};
 void BaseLayer::setInput(const Mat<double> &input){
     this->input=input;
 }
-
 Mat<double> & BaseLayer::getOutput() {
     return this->output;
 }
+Mat<double>& BaseLayer::getDelta(){
+    return this->delta;
+}
+Mat<double> & BaseLayer::getWeight(){
+    return this->weight;
+}
+Mat<double> & BaseLayer::getGradient(){
+    return this->gradient;
+}
+
+void BaseLayer::forward(){};
+void BaseLayer::backward(){};
+void BaseLayer::backward(const Mat<double> &nextDelta){};
 
 // InputLayer
-InputLayer::InputLayer(const Mat<double> &in) :{
-    this->setInput(in);//TODO, virtual function can be directly called by Son class?
-}
 Mat<double>& InputLayer::getOutput() {
     return this->input;
 }
 
 // FullyConnetedLayer
-FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,ptrActivation pf){
+//FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,ptrActivation pf){
+//    Mat<double> bias(numOut, 1, Fill::ZEROS);
+//    Mat<double> weight_ = Mat<double>(numOut, numIn, Fill::RANDOM);
+//    this->weight = weight_.concatenate(bias, Axis::COL);
+//    this->activationFunction=pf;
+//}
+
+FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,const Activator &activator){
     Mat<double> bias(numOut, 1, Fill::ZEROS);
     Mat<double> weight_ = Mat<double>(numOut, numIn, Fill::RANDOM);
     this->weight = weight_.concatenate(bias, Axis::COL);
-    this->activationFunction=pf;
+    this->activator=activator;
 }
 
 void FullyConnectedLayer::forward() {
     Mat<double> Z = weight.matMul(this->input);
-    this->activationFunction(Z, this->output);
+    this->activator.forward(Z, this->output);
 }
+
 void FullyConnectedLayer::backward(const Mat<double> &nextDelta){
     Mat<double> weightTrans=this->weight.transport();
-    this->delta=(this->output)*(1.0-this->output)*(weightTrans.matMul(nextDelta));
+    Mat<double> derivative;
+    this->activator.backward(this->output,derivative);
+    this->delta=derivative*(weightTrans.matMul(nextDelta));
     this->gradient=this->delta.matMul(this->input.transport());
 }
 
@@ -48,17 +64,14 @@ SigmoidLayer::SigmoidLayer(int numIn, int numOut,const Mat<double> &Y) {
     Mat<double> bias(numOut, 1, Fill::ZEROS);
     Mat<double> weight_ = Mat<double>(numOut, numIn, Fill::RANDOM);
     this->weight = weight_.concatenate(bias, Axis::COL);
-    this->Y=this->setTarget(Y);
+    this->Y=Y;
 }
 
-const Mat<double> & SigmoidLayer::setTarget(const Mat<double> &Y){
-    return Y;
-}
 void SigmoidLayer::forward() {
     sigmoid(this->input,this->output);
 }
 
-void SigmoidLayer::backward(const Mat<double> &nextDelta,const Mat<double> &target){
-    this->delta=this->output*(1.0-this->output)*(target-this->output);
+void SigmoidLayer::backward(){
+    this->delta=this->output*(1.0-this->output)*(this->Y-this->output);
     this->gradient=this->delta.matMul(this->input.transport());
 }

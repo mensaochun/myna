@@ -123,33 +123,6 @@ fc_vec/fast:
 	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/build
 .PHONY : fc_vec/fast
 
-layer.o: layer.cpp.o
-
-.PHONY : layer.o
-
-# target to build an object file
-layer.cpp.o:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/layer.cpp.o
-.PHONY : layer.cpp.o
-
-layer.i: layer.cpp.i
-
-.PHONY : layer.i
-
-# target to preprocess a source file
-layer.cpp.i:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/layer.cpp.i
-.PHONY : layer.cpp.i
-
-layer.s: layer.cpp.s
-
-.PHONY : layer.s
-
-# target to generate assembly for a file
-layer.cpp.s:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/layer.cpp.s
-.PHONY : layer.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,32 +150,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-net.o: net.cpp.o
+mat/mat.o: mat/mat.cpp.o
 
-.PHONY : net.o
+.PHONY : mat/mat.o
 
 # target to build an object file
-net.cpp.o:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/net.cpp.o
-.PHONY : net.cpp.o
+mat/mat.cpp.o:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/mat.cpp.o
+.PHONY : mat/mat.cpp.o
 
-net.i: net.cpp.i
+mat/mat.i: mat/mat.cpp.i
 
-.PHONY : net.i
+.PHONY : mat/mat.i
 
 # target to preprocess a source file
-net.cpp.i:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/net.cpp.i
-.PHONY : net.cpp.i
+mat/mat.cpp.i:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/mat.cpp.i
+.PHONY : mat/mat.cpp.i
 
-net.s: net.cpp.s
+mat/mat.s: mat/mat.cpp.s
 
-.PHONY : net.s
+.PHONY : mat/mat.s
 
 # target to generate assembly for a file
-net.cpp.s:
-	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/net.cpp.s
-.PHONY : net.cpp.s
+mat/mat.cpp.s:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/mat.cpp.s
+.PHONY : mat/mat.cpp.s
+
+mat/test_mat.o: mat/test_mat.cpp.o
+
+.PHONY : mat/test_mat.o
+
+# target to build an object file
+mat/test_mat.cpp.o:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o
+.PHONY : mat/test_mat.cpp.o
+
+mat/test_mat.i: mat/test_mat.cpp.i
+
+.PHONY : mat/test_mat.i
+
+# target to preprocess a source file
+mat/test_mat.cpp.i:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/test_mat.cpp.i
+.PHONY : mat/test_mat.cpp.i
+
+mat/test_mat.s: mat/test_mat.cpp.s
+
+.PHONY : mat/test_mat.s
+
+# target to generate assembly for a file
+mat/test_mat.cpp.s:
+	$(MAKE) -f CMakeFiles/fc_vec.dir/build.make CMakeFiles/fc_vec.dir/mat/test_mat.cpp.s
+.PHONY : mat/test_mat.cpp.s
 
 # Help Target
 help:
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fc_vec"
-	@echo "... layer.o"
-	@echo "... layer.i"
-	@echo "... layer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... net.o"
-	@echo "... net.i"
-	@echo "... net.s"
+	@echo "... mat/mat.o"
+	@echo "... mat/mat.i"
+	@echo "... mat/mat.s"
+	@echo "... mat/test_mat.o"
+	@echo "... mat/test_mat.i"
+	@echo "... mat/test_mat.s"
 .PHONY : help
 
 

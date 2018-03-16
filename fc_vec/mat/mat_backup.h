@@ -11,7 +11,7 @@
 #include "assert.h"
 
 namespace myna {
-    enum Fill {
+    static enum Fill {
         NONE,
         ZEROS,
         ONES,
@@ -46,11 +46,11 @@ namespace myna {
     private:
         int cols;
         int rows;
-        T **data;
+        T **data = nullptr;
 
     public:
         // only declare variables!
-        Mat() {};//std::cout<<"call constructor:Mat();"<<std::endl;};
+        Mat();//std::cout<<"call constructor:Mat();"<<std::endl;};
         // init variables, allocate memory, but not init
         Mat(int rows, int cols, Fill type = NONE);
 
@@ -108,17 +108,16 @@ namespace myna {
             }
             return B;
         }
-        friend Mat<T> operator-(const Mat<T> &A,T scalar) {
+
+        friend Mat<T> operator-(const Mat<T> &A, T scalar) {
             Mat<T> B(A.rows, A.cols);
             for (int i = 0; i < A.rows; i++) {
                 for (int j = 0; j < A.cols; j++) {
-                    B[i][j] =  scalar-A[i][j] ;
+                    B[i][j] = scalar - A[i][j];
                 }
             }
             return B;
         }
-
-
 
 
         Mat<T> operator/(T scalar);
@@ -148,24 +147,44 @@ namespace myna {
         //TODO
         //friend Mat<T> sum(Mat<T> ...)
 
-//    //load from txt.
-//    void load();
-//    //save to txt.
-//    void save();
+        //load from txt.
+        //void load();
+        //save to txt.
+        //void save();
     };
+
+
+    MATTEMPLATE
+    Mat<T>::Mat() {
+        this->rows = 0;
+        this->cols = 0;
+        this->data = nullptr;
+    }
 
     MATTEMPLATE
     Mat<T> &Mat<T>::operator=(const Mat<T> &M) {
-        //std::cout << "call operator=" << std::endl;
+        // Note:
+        // if *this is initilized by constructor Mat<T>(rows,cols) or Mat<T>(rows,cols,Fill),
+        // it needs to free the memory and allocate new memory.
+        // if *this is initilized by constructor Mat<T>(), no need to free memory.
+        // Here, operator= must be used like this:
+
+        // TODO：what is the connection with the copy constructor!
         if (this != &M) {
+            if (this->rows != 0 && this->cols != 0 && this->data != nullptr) {
+                // free old memory
+                for (int i = 0; i < this->rows; i++) {
+                    delete[]this->data[i];
+                }
+                delete[]this->data;
+                this->rows=0;
+                this->cols=0;
+                this->data= nullptr;
+            }
+
             this->rows = M.rows;
             this->cols = M.cols;
-            //释放原来的内存
-//        for (int i = 0; i < this->rows; i++) {
-//            delete []this->data[i];
-//        }
-//        delete[]this->data;
-            //分配新的内存
+            // allocate memory
             this->data = new T *[this->rows];
             for (int i = 0; i < this->rows; i++) {
                 this->data[i] = new T[this->cols];
@@ -175,9 +194,7 @@ namespace myna {
                     this->data[i][j] = M.data[i][j];
                 }
             }
-
         }
-
         return *this;
     }
 
@@ -284,7 +301,7 @@ namespace myna {
     }
 
     MATTEMPLATE
-    Mat<T> Mat<T>::operator-(const Mat<T> &A) const{
+    Mat<T> Mat<T>::operator-(const Mat<T> &A) const {
         Mat<T> B(this->rows, this->cols);
         for (int i = 0; i < this->rows; i++) {
             for (int j = 0; j < this->cols; j++) {
@@ -515,46 +532,47 @@ namespace myna {
     }
 
     MATTEMPLATE
-    Mat<T> Mat<T>::transport(){
+    Mat<T> Mat<T>::transport() {
         Mat<T> M(this->cols, this->rows);
-        for(int i=0;i<this->cols;i++){
-            for(int j=0;j<this->rows;j++){
-                M[i][j]=this->data[j][i];
+        for (int i = 0; i < this->cols; i++) {
+            for (int j = 0; j < this->rows; j++) {
+                M[i][j] = this->data[j][i];
             }
         }
         return M;
     }
+
     MATTEMPLATE
-    Mat<T> Mat<T>::concatenate(const Mat<T> &in, Axis axis){
+    Mat<T> Mat<T>::concatenate(const Mat<T> &in, Axis axis) {
         Mat<double> out;
-        if(axis==Axis::ROW){
-            assert(in.getCols()==this->cols);
-            int outRows=in.getRows()+this->rows;
-            int outCols=in.getCols();
-            out=Mat<double> (outRows,outCols);
-            for(int i=0;i<this->rows;i++){
-                for(int j=0;j<outCols;j++){
-                    out[i][j]=this->data[i][j];
+        if (axis == Axis::ROW) {
+            assert(in.getCols() == this->cols);
+            int outRows = in.getRows() + this->rows;
+            int outCols = in.getCols();
+            out = Mat<double>(outRows, outCols);
+            for (int i = 0; i < this->rows; i++) {
+                for (int j = 0; j < outCols; j++) {
+                    out[i][j] = this->data[i][j];
                 }
             }
-            for(int i=this->rows;i<outRows;i++){
-                for(int j=0;j<outCols;j++){
-                    out[i][j]=in[i-this->rows][j];
+            for (int i = this->rows; i < outRows; i++) {
+                for (int j = 0; j < outCols; j++) {
+                    out[i][j] = in[i - this->rows][j];
                 }
             }
-        }else if(axis==Axis::COL){
-            assert(in.getRows()==this->rows);
-            int outRows=in.getRows();
-            int outCols=in.getCols()+this->cols;
-            out=Mat<double> (outRows,outCols);
-            for(int i=0;i<outRows;i++){
-                for(int j=0;j<this->cols;j++){
-                    out[i][j]=this->data[i][j];
+        } else if (axis == Axis::COL) {
+            assert(in.getRows() == this->rows);
+            int outRows = in.getRows();
+            int outCols = in.getCols() + this->cols;
+            out = Mat<double>(outRows, outCols);
+            for (int i = 0; i < outRows; i++) {
+                for (int j = 0; j < this->cols; j++) {
+                    out[i][j] = this->data[i][j];
                 }
             }
-            for(int i=0;i<outRows;i++){
-                for(int j=this->cols;j<outCols;j++){
-                    out[i][j]=in[i][j-this->cols];
+            for (int i = 0; i < outRows; i++) {
+                for (int j = this->cols; j < outCols; j++) {
+                    out[i][j] = in[i][j - this->cols];
                 }
             }
         }

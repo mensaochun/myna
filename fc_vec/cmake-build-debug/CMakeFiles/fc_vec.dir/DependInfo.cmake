@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/stone/c++/myna/fc_vec/layer.cpp" "/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/fc_vec.dir/layer.cpp.o"
   "/home/pi/stone/c++/myna/fc_vec/main.cpp" "/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/fc_vec.dir/main.cpp.o"
-  "/home/pi/stone/c++/myna/fc_vec/net.cpp" "/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/fc_vec.dir/net.cpp.o"
+  "/home/pi/stone/c++/myna/fc_vec/mat/mat.cpp" "/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/fc_vec.dir/mat/mat.cpp.o"
+  "/home/pi/stone/c++/myna/fc_vec/mat/test_mat.cpp" "/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/fc_vec.dir/mat/test_mat.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
