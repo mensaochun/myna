@@ -82,31 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c++/myna/fc_vec/layer.cpp">
+		<Unit filename="E:/c++/myna/fc_vec/activation.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/layer.h">
+		<Unit filename="E:/c++/myna/fc_vec/layer.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
 		<Unit filename="E:/c++/myna/fc_vec/main.cpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/mat.h">
+		<Unit filename="E:/c++/myna/fc_vec/mat/mat.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/net.cpp">
+		<Unit filename="E:/c++/myna/fc_vec/net.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/net.h">
+		<Unit filename="E:/c++/myna/fc_vec/solver.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/solver.cpp">
-			<Option target="fc_vec"/>
-		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/solver.h">
-			<Option target="fc_vec"/>
-		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/utils.h">
+		<Unit filename="E:/c++/myna/fc_vec/utils.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
 		<Unit filename="E:/c++/myna/fc_vec/CMakeLists.txt">

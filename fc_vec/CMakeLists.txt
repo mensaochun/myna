@@ -3,4 +3,4 @@ project(fc_vec)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(fc_vec main.cpp mat.h layer.h net.h utils.h layer.cpp net.cpp solver.h solver.cpp)
+add_executable(fc_vec main.cpp mat/mat.hpp layer.hpp net.hpp utils.hpp solver.hpp activation.hpp)

@@ -6,41 +6,49 @@
 
 #IncludeRegexTransform: 
 
-E:/c++/myna/fc_vec/layer.cpp
-layer.h
-E:/c++/myna/fc_vec/layer.h
+E:/c++/myna/fc_vec/activation.hpp
+mat/mat.hpp
+E:/c++/myna/fc_vec/mat/mat.hpp
+utils.hpp
+E:/c++/myna/fc_vec/utils.hpp
 
-E:/c++/myna/fc_vec/layer.h
-mat.h
-E:/c++/myna/fc_vec/mat.h
-utils.h
-E:/c++/myna/fc_vec/utils.h
+E:/c++/myna/fc_vec/layer.hpp
+mat/mat.hpp
+E:/c++/myna/fc_vec/mat/mat.hpp
+utils.hpp
+E:/c++/myna/fc_vec/utils.hpp
+activation.hpp
+E:/c++/myna/fc_vec/activation.hpp
 
 E:/c++/myna/fc_vec/main.cpp
-net.h
-E:/c++/myna/fc_vec/net.h
+solver.hpp
+E:/c++/myna/fc_vec/solver.hpp
+ctime
+-
 
-E:/c++/myna/fc_vec/mat.h
+E:/c++/myna/fc_vec/mat/mat.hpp
 iostream
 -
 assert.h
-E:/c++/myna/fc_vec/assert.h
+E:/c++/myna/fc_vec/mat/assert.h
 
-E:/c++/myna/fc_vec/net.cpp
-net.h
-E:/c++/myna/fc_vec/net.h
-
-E:/c++/myna/fc_vec/net.h
-utils.h
-E:/c++/myna/fc_vec/utils.h
-layer.h
-E:/c++/myna/fc_vec/layer.h
+E:/c++/myna/fc_vec/net.hpp
+utils.hpp
+E:/c++/myna/fc_vec/utils.hpp
+layer.hpp
+E:/c++/myna/fc_vec/layer.hpp
+solver.hpp
+E:/c++/myna/fc_vec/solver.hpp
 vector
 -
 
-E:/c++/myna/fc_vec/utils.h
-mat.h
-E:/c++/myna/fc_vec/mat.h
+E:/c++/myna/fc_vec/solver.hpp
+net.hpp
+E:/c++/myna/fc_vec/net.hpp
+
+E:/c++/myna/fc_vec/utils.hpp
+mat/mat.hpp
+E:/c++/myna/fc_vec/mat/mat.hpp
 math.h
--
+E:/c++/myna/fc_vec/math.h
 

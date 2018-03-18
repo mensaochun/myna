@@ -1,8 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fc_vec.dir/main.cpp.obj"
-  "CMakeFiles/fc_vec.dir/layer.cpp.obj"
-  "CMakeFiles/fc_vec.dir/net.cpp.obj"
-  "CMakeFiles/fc_vec.dir/solver.cpp.obj"
   "fc_vec.pdb"
   "fc_vec.exe"
   "fc_vec.exe.manifest"

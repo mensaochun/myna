@@ -122,33 +122,6 @@ fc_vec/fast:
 	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/build
 .PHONY : fc_vec/fast
 
-layer.obj: layer.cpp.obj
-
-.PHONY : layer.obj
-
-# target to build an object file
-layer.cpp.obj:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/layer.cpp.obj
-.PHONY : layer.cpp.obj
-
-layer.i: layer.cpp.i
-
-.PHONY : layer.i
-
-# target to preprocess a source file
-layer.cpp.i:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/layer.cpp.i
-.PHONY : layer.cpp.i
-
-layer.s: layer.cpp.s
-
-.PHONY : layer.s
-
-# target to generate assembly for a file
-layer.cpp.s:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/layer.cpp.s
-.PHONY : layer.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -176,60 +149,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-net.obj: net.cpp.obj
-
-.PHONY : net.obj
-
-# target to build an object file
-net.cpp.obj:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/net.cpp.obj
-.PHONY : net.cpp.obj
-
-net.i: net.cpp.i
-
-.PHONY : net.i
-
-# target to preprocess a source file
-net.cpp.i:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/net.cpp.i
-.PHONY : net.cpp.i
-
-net.s: net.cpp.s
-
-.PHONY : net.s
-
-# target to generate assembly for a file
-net.cpp.s:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/net.cpp.s
-.PHONY : net.cpp.s
-
-solver.obj: solver.cpp.obj
-
-.PHONY : solver.obj
-
-# target to build an object file
-solver.cpp.obj:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/solver.cpp.obj
-.PHONY : solver.cpp.obj
-
-solver.i: solver.cpp.i
-
-.PHONY : solver.i
-
-# target to preprocess a source file
-solver.cpp.i:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/solver.cpp.i
-.PHONY : solver.cpp.i
-
-solver.s: solver.cpp.s
-
-.PHONY : solver.s
-
-# target to generate assembly for a file
-solver.cpp.s:
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/solver.cpp.s
-.PHONY : solver.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -239,18 +158,9 @@ help:
 	@echo ... fc_vec
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... layer.obj
-	@echo ... layer.i
-	@echo ... layer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... net.obj
-	@echo ... net.i
-	@echo ... net.s
-	@echo ... solver.obj
-	@echo ... solver.i
-	@echo ... solver.s
 .PHONY : help
 
 

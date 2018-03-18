@@ -80,97 +80,19 @@ CMakeFiles/fc_vec.dir/main.cpp.obj.provides: CMakeFiles/fc_vec.dir/main.cpp.obj.
 CMakeFiles/fc_vec.dir/main.cpp.obj.provides.build: CMakeFiles/fc_vec.dir/main.cpp.obj
 
 
-CMakeFiles/fc_vec.dir/layer.cpp.obj: CMakeFiles/fc_vec.dir/flags.make
-CMakeFiles/fc_vec.dir/layer.cpp.obj: ../layer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c++\myna\fc_vec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fc_vec.dir/layer.cpp.obj"
-	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\fc_vec.dir\layer.cpp.obj -c E:\c++\myna\fc_vec\layer.cpp
-
-CMakeFiles/fc_vec.dir/layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/layer.cpp.i"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\c++\myna\fc_vec\layer.cpp > CMakeFiles\fc_vec.dir\layer.cpp.i
-
-CMakeFiles/fc_vec.dir/layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/layer.cpp.s"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\c++\myna\fc_vec\layer.cpp -o CMakeFiles\fc_vec.dir\layer.cpp.s
-
-CMakeFiles/fc_vec.dir/layer.cpp.obj.requires:
-
-.PHONY : CMakeFiles/fc_vec.dir/layer.cpp.obj.requires
-
-CMakeFiles/fc_vec.dir/layer.cpp.obj.provides: CMakeFiles/fc_vec.dir/layer.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/layer.cpp.obj.provides.build
-.PHONY : CMakeFiles/fc_vec.dir/layer.cpp.obj.provides
-
-CMakeFiles/fc_vec.dir/layer.cpp.obj.provides.build: CMakeFiles/fc_vec.dir/layer.cpp.obj
-
-
-CMakeFiles/fc_vec.dir/net.cpp.obj: CMakeFiles/fc_vec.dir/flags.make
-CMakeFiles/fc_vec.dir/net.cpp.obj: ../net.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c++\myna\fc_vec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fc_vec.dir/net.cpp.obj"
-	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\fc_vec.dir\net.cpp.obj -c E:\c++\myna\fc_vec\net.cpp
-
-CMakeFiles/fc_vec.dir/net.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/net.cpp.i"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\c++\myna\fc_vec\net.cpp > CMakeFiles\fc_vec.dir\net.cpp.i
-
-CMakeFiles/fc_vec.dir/net.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/net.cpp.s"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\c++\myna\fc_vec\net.cpp -o CMakeFiles\fc_vec.dir\net.cpp.s
-
-CMakeFiles/fc_vec.dir/net.cpp.obj.requires:
-
-.PHONY : CMakeFiles/fc_vec.dir/net.cpp.obj.requires
-
-CMakeFiles/fc_vec.dir/net.cpp.obj.provides: CMakeFiles/fc_vec.dir/net.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/net.cpp.obj.provides.build
-.PHONY : CMakeFiles/fc_vec.dir/net.cpp.obj.provides
-
-CMakeFiles/fc_vec.dir/net.cpp.obj.provides.build: CMakeFiles/fc_vec.dir/net.cpp.obj
-
-
-CMakeFiles/fc_vec.dir/solver.cpp.obj: CMakeFiles/fc_vec.dir/flags.make
-CMakeFiles/fc_vec.dir/solver.cpp.obj: ../solver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c++\myna\fc_vec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fc_vec.dir/solver.cpp.obj"
-	D:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\fc_vec.dir\solver.cpp.obj -c E:\c++\myna\fc_vec\solver.cpp
-
-CMakeFiles/fc_vec.dir/solver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fc_vec.dir/solver.cpp.i"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\c++\myna\fc_vec\solver.cpp > CMakeFiles\fc_vec.dir\solver.cpp.i
-
-CMakeFiles/fc_vec.dir/solver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fc_vec.dir/solver.cpp.s"
-	D:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\c++\myna\fc_vec\solver.cpp -o CMakeFiles\fc_vec.dir\solver.cpp.s
-
-CMakeFiles/fc_vec.dir/solver.cpp.obj.requires:
-
-.PHONY : CMakeFiles/fc_vec.dir/solver.cpp.obj.requires
-
-CMakeFiles/fc_vec.dir/solver.cpp.obj.provides: CMakeFiles/fc_vec.dir/solver.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\fc_vec.dir\build.make CMakeFiles/fc_vec.dir/solver.cpp.obj.provides.build
-.PHONY : CMakeFiles/fc_vec.dir/solver.cpp.obj.provides
-
-CMakeFiles/fc_vec.dir/solver.cpp.obj.provides.build: CMakeFiles/fc_vec.dir/solver.cpp.obj
-
-
 # Object files for target fc_vec
 fc_vec_OBJECTS = \
-"CMakeFiles/fc_vec.dir/main.cpp.obj" \
-"CMakeFiles/fc_vec.dir/layer.cpp.obj" \
-"CMakeFiles/fc_vec.dir/net.cpp.obj" \
-"CMakeFiles/fc_vec.dir/solver.cpp.obj"
+"CMakeFiles/fc_vec.dir/main.cpp.obj"
 
 # External object files for target fc_vec
 fc_vec_EXTERNAL_OBJECTS =
 
 fc_vec.exe: CMakeFiles/fc_vec.dir/main.cpp.obj
-fc_vec.exe: CMakeFiles/fc_vec.dir/layer.cpp.obj
-fc_vec.exe: CMakeFiles/fc_vec.dir/net.cpp.obj
-fc_vec.exe: CMakeFiles/fc_vec.dir/solver.cpp.obj
 fc_vec.exe: CMakeFiles/fc_vec.dir/build.make
 fc_vec.exe: CMakeFiles/fc_vec.dir/linklibs.rsp
 fc_vec.exe: CMakeFiles/fc_vec.dir/objects1.rsp
 fc_vec.exe: CMakeFiles/fc_vec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c++\myna\fc_vec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable fc_vec.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c++\myna\fc_vec\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fc_vec.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\fc_vec.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,9 +101,6 @@ CMakeFiles/fc_vec.dir/build: fc_vec.exe
 .PHONY : CMakeFiles/fc_vec.dir/build
 
 CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/main.cpp.obj.requires
-CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/layer.cpp.obj.requires
-CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/net.cpp.obj.requires
-CMakeFiles/fc_vec.dir/requires: CMakeFiles/fc_vec.dir/solver.cpp.obj.requires
 
 .PHONY : CMakeFiles/fc_vec.dir/requires
 
