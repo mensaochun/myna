@@ -279,10 +279,14 @@ namespace myna {
 
     MATTEMPLATE
     Mat<T>::~Mat() {
-        for (int i = 0; i < this->rows; i++) {
-            delete[]data[i];
+        if(this->rows==0||this->cols==0||this->data== nullptr){
+            return;//TODO: need more judges
+        } else{
+            for (int i = 0; i < this->rows; i++) {
+                delete[]data[i];
+            }
+            delete[]data;
         }
-        delete[]data;
     }
 
     MATTEMPLATE

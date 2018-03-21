@@ -9,13 +9,13 @@
 #include "math.h"
 using namespace myna;
 double sigmoid(double x){
-    int y=1.0/(1.0+exp(-x));
+    double y=1.0/(1.0+exp(-x));
     return y;
 }
 void sigmoid(const Mat<double> &in,Mat<double> &out){
     int numRows=in.getRows();
     int numCols=in.getCols();
-    out=Mat<double>(numRows,numCols);
+    //out=Mat<double>(numRows,numCols);//TODO：stack memory?
     for(int i=0;i<numRows;i++){
         for(int j=0;j<numCols;j++){
            out[i][j]=sigmoid(in[i][j]);

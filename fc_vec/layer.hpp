@@ -58,9 +58,6 @@ public:
 
 class SigmoidLayer:public BaseLayer{
 private:
-    Mat<double> delta;
-    Mat<double> gradient;
-    Mat<double> weight;
     Mat<double> Y;
 public:
     SigmoidLayer(int numIn,int numOut,const Mat<double> &Y);
@@ -114,13 +111,14 @@ FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,Activator *activa
 
 void FullyConnectedLayer::forward() {
     Mat<double> Z = weight.matMul(this->input);
-    this->activator.forward(Z, this->output);
+    this->output=Mat<double>(Z.getRows(),Z.getCols());
+    this->activator->forward(Z, this->output);
 }
 
 void FullyConnectedLayer::backward(const Mat<double> &nextDelta){
     Mat<double> weightTrans=this->weight.transport();
     Mat<double> derivative;
-    this->activator.backward(this->output,derivative);
+    this->activator->backward(this->output,derivative);
     this->delta=derivative*(weightTrans.matMul(nextDelta));
     this->gradient=this->delta.matMul(this->input.transport());
 }
@@ -139,8 +137,8 @@ void SigmoidLayer::forward() {
 }
 
 void SigmoidLayer::backward(){
-    this->delta=this->output*(1.0-this->output)*(this->Y-this->output);
-    this->gradient=this->delta.matMul(this->input.transport());
+    this->delta=output*(1.0-output)*(Y-output);
+    this->gradient=delta.matMul(input.transport());
 }
 
 

@@ -84,7 +84,7 @@ Net::~Net() {
 
 void Net::addInputLayer(const Mat<double> &X) {
     InputLayer *i=new InputLayer();
-    i->setInput(X);
+    i->setInput(X);// call InputLayer's setInput().
     this->layerList.push_back(i);
     this->numLayers++;
 }
