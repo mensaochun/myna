@@ -32,7 +32,7 @@ public:
 
     void addInputLayer(const Mat<double> &X);
 
-    void addFullyConnectedLayer(int numIn, int numOut);
+    void addFullyConnectedLayer(int numIn, int numOut,Activator *activator);
 
     void addSigmoidLayer(int numIn, int numOut, const Mat<double> &Y);
 
@@ -89,17 +89,17 @@ void Net::addInputLayer(const Mat<double> &X) {
     this->numLayers++;
 }
 
-void Net::addFullyConnectedLayer(int numIn, int numOut) {
-    FullyConnectedLayer *f = new FullyConnectedLayer(numIn, numOut, sigmoid);
+void Net::addFullyConnectedLayer(int numIn, int numOut,Activator *activator) {
+    FullyConnectedLayer *f = new FullyConnectedLayer(numIn, numOut,activator);
     //set input
-    f->setInput(layerList[this->numLayers - 1]->getOutput());
+    f->setInput(layerList[this->numLayers]->getOutput());
     this->layerList.push_back(f);
     this->numLayers++;
 }
 
 void Net::addSigmoidLayer(int numIn, int numOut,const Mat<double> &Y) {
     SigmoidLayer *s = new SigmoidLayer(numIn, numOut,this->Y);
-    s->setInput(layerList[this->numLayers - 1]->getOutput());
+    s->setInput(layerList[this->numLayers]->getOutput());
     this->layerList.push_back(s);
     this->numLayers++;
 

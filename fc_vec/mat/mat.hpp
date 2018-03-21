@@ -116,7 +116,7 @@ namespace myna {
 
         Mat<T> min(Axis axis);
 
-        Mat<T> concatenate(const Mat<T> &in, Axis axis);
+        Mat<T> concatenate(const Mat<T> &in, Axis axis) const;
 
         Mat<T> transport();
 
@@ -137,6 +137,8 @@ namespace myna {
 
         return (b - a) * rand() / T(RAND_MAX) + a;
     }
+
+
 
     // Mat---------------------------------------
 
@@ -574,7 +576,7 @@ namespace myna {
     }
 
     MATTEMPLATE
-    Mat<T> Mat<T>::concatenate(const Mat<T> &in, Axis axis) {
+    Mat<T> Mat<T>::concatenate(const Mat<T> &in, Axis axis) const{
         Mat<double> out;
         if (axis == Axis::ROW) {
             assert(in.getCols() == this->cols);

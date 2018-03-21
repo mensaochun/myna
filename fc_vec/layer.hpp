@@ -45,10 +45,10 @@ public:
 // ---------------FullyConnectedLayer-----------------
 class FullyConnectedLayer : public BaseLayer {
 private:
-    Activator activator;
+    Activator *activator;
 public:
     //FullyConnectedLayer(int numIn, int numOut,ptrActivation pf);
-    FullyConnectedLayer(int numIn, int numOut,const Activator &activator);
+    FullyConnectedLayer(int numIn, int numOut,Activator *activator);
 
     virtual void forward();
 
@@ -72,7 +72,8 @@ public:
 
 // BaseLayer
 void BaseLayer::setInput(const Mat<double> &input){
-    this->input=input;
+    Mat<double> oneMat(1,input.getCols(),Fill::ONES);
+    this->input=input.concatenate(oneMat,Axis::ROW);
 }
 Mat<double> & BaseLayer::getOutput() {
     return this->output;
@@ -104,7 +105,7 @@ Mat<double>& InputLayer::getOutput() {
 //    this->activationFunction=pf;
 //}
 
-FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,const Activator &activator){
+FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,Activator *activator){
     Mat<double> bias(numOut, 1, Fill::ZEROS);
     Mat<double> weight_ = Mat<double>(numOut, numIn, Fill::RANDOM);
     this->weight = weight_.concatenate(bias, Axis::COL);
