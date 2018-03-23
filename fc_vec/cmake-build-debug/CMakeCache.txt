@@ -200,6 +200,12 @@ fc_vec_BINARY_DIR:STATIC=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug
 //Value Computed by CMake
 fc_vec_SOURCE_DIR:STATIC=/home/pi/stone/c++/myna/fc_vec
 
+//Value Computed by CMake
+fc_vec__BINARY_DIR:STATIC=/home/pi/stone/c++/myna/fc_vec/cmake-build-debug
+
+//Value Computed by CMake
+fc_vec__SOURCE_DIR:STATIC=/home/pi/stone/c++/myna/fc_vec
+
 
 ########################
 # INTERNAL cache entries
