@@ -11,20 +11,24 @@ namespace myna {
     template<typename T>
     class Vector {
     private:
-        const int interval = 200;
-        int capacity;
-        int size;
-        T *data;
+        const int interval = 200;// the number of capacity to add, fixed to a const number.
+        int capacity;//total capacity of the container.
+        int size;// the number of elements in the container.
+        T *data;//data pointer. allocate memory from heap.
     private:
         void addCapacity();
 
     public:
+        // not allocate memory, not init
         Vector();
 
+        // allocate memory, but not init.
         Vector(int n);
 
+        // allocate memory, init with different types.
         Vector(int n, Fill fill);
 
+        // free memory.
         ~Vector();
 
 //        void pushBack(const T &elem);
@@ -38,14 +42,14 @@ namespace myna {
 
     template<typename T>
     Vector<T>::Vector() {
-        this->size=0;
-        this->capacity=0;
+        this->size = 0;
+        this->capacity = 0;
         this->data = nullptr;
     }
 
     template<typename T>
     Vector<T>::Vector(int n) {
-        this->size=n;
+        this->size = n;
         this->capacity = n;
         this->data = new T[n];
     }
@@ -106,7 +110,7 @@ namespace myna {
 
     template<typename T>
     void Vector<T>::pushBack(const T elem) {
-        if (this->size <this->capacity) {
+        if (this->size < this->capacity) {
             this->data[size] = elem;
             this->size++;
         } else {
@@ -115,16 +119,17 @@ namespace myna {
             this->size++;
         }
     }
+
     template<typename T>
-    void Vector<T>::print(){
-        if(this->size>0){
-            std::cout<<"Print vector:"<<std::endl;
-            for(int i=0;i<this->size;i++){
-                std::cout<<this->data[i]<<" ";
+    void Vector<T>::print() {
+        if (this->size > 0) {
+            std::cout << "Print vector:" << std::endl;
+            for (int i = 0; i < this->size; i++) {
+                std::cout << this->data[i] << " ";
             }
-            std::cout<<"\n\n";
-        }else{
-            std::cout<<"There is no data in the vector\n\n";
+            std::cout << "\n\n";
+        } else {
+            std::cout << "There is no data in the vector\n\n";
         }
 
     }
