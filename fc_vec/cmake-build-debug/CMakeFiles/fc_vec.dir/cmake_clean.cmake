@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fc_vec.dir/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
-  "CMakeFiles/fc_vec.dir/main.cpp.o"
+  "CMakeFiles/fc_vec.dir/main.cpp.obj"
   "fc_vec.pdb"
-  "fc_vec"
+  "fc_vec.exe"
+  "fc_vec.exe.manifest"
+  "libfc_vec.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

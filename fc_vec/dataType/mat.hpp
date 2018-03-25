@@ -14,6 +14,30 @@
 #include "vector.hpp"
 
 namespace myna {
+    // template declare.
+    // Friend function is not belong to class, so it need
+    // to be instantiated in the class. thus, it is declared first here.
+    template<typename T>
+    class Mat;
+
+    template<typename T>
+    Mat<T> operator*(const Mat<T> &A, T scalar);
+
+    template<typename T>
+    Mat<T> operator*(T scalar, const Mat<T> &A);
+
+    template<typename T>
+    Mat<T> operator-(T scalar, const Mat<T> &A);
+
+    template<typename T>
+    Mat<T> operator-(const Mat<T> &A, T scalar);
+
+    template<typename T>
+    Mat<T> operator+(T scalar, const Mat<T> &A);
+
+    template<typename T>
+    Mat<T> operator+(const Mat<T> &A, T scalar);
+
 
     MATTEMPLATE
     class Mat {
@@ -23,9 +47,10 @@ namespace myna {
         T **data = nullptr;
 
     public:
-        // only declare variables!
-        Mat();//std::cout<<"call constructor:Mat();"<<std::endl;};
-        // init variables, allocate memory, but not init
+        // only declare variables.
+        Mat();
+
+        // init variables, allocate memory, but not init.
         Mat(int rows, int cols, Fill type = NONE);
 
         Mat(const Mat<T> &mat);
@@ -38,9 +63,22 @@ namespace myna {
 
         int getRows() const;
 
+        // -------------------------operator reload-------------------------------
+
+        friend Mat<T> operator*<T>(const Mat<T> &A, T scalar);
+
+        friend Mat<T> operator*<T>(T scalar, const Mat<T> &A);
+
+        friend Mat<T> operator-<T>(T scalar, const Mat<T> &A);
+
+        friend Mat<T> operator-<T>(const Mat<T> &A, T scalar);
+
+        friend Mat<T> operator+<T>(T scalar, const Mat<T> &A);
+
+        friend Mat<T> operator+<T>(const Mat<T> &A, T scalar);
+
         // can be read and written.Note:should not use A[i]!
-        //TODO:need return T*&?
-        T *operator[](int i);
+        T *operator[](int i);//TODO:need return T*&?
 
         //can be only read.
         const T *operator[](int i) const;
@@ -53,17 +91,6 @@ namespace myna {
 
         Mat<T> operator*(const Mat<T> &A);
 
-
-        template<typename T2>
-        friend Mat<T2> operator*(const Mat<T2> &A, T2 scalar);
-
-        template<typename T2>
-        friend Mat<T2> operator-(T2 scalar, const Mat<T2> &A);
-
-        template<typename T2>
-        friend Mat<T2> operator-(const Mat<T2> &A, T2 scalar);
-
-
         Mat<T> operator/(T scalar);
 
         Mat<T> operator/(const Mat<T> &in);
@@ -74,8 +101,8 @@ namespace myna {
 
         Mat<T> operator()(Span rows, SpanAll cols);
 
+        // ------------------------functions---------------------------
         Mat<T> sum(Axis axis);
-
 
         Mat<T> mean(Axis axis);
 
@@ -93,10 +120,9 @@ namespace myna {
 
     };
 
-
-    template<typename T2>
-    Mat<T2> operator*(T2 scalar, const Mat<T2> &A) {
-        Mat<T2> B(A.rows, A.cols);
+    template<typename T>
+    Mat<T> operator*(T scalar, const Mat<T> &A) {
+        Mat<T> B(A.rows, A.cols);
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.cols; j++) {
                 B[i][j] = A[i][j] * scalar;
@@ -105,9 +131,9 @@ namespace myna {
         return B;
     }
 
-    template<typename T2>
-    Mat<T2> operator*(const Mat<T2> &A, T2 scalar) {
-        Mat<T2> B(A.rows, A.cols);
+    template<typename T>
+    Mat<T> operator*(const Mat<T> &A, T scalar) {
+        Mat<T> B(A.rows, A.cols);
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.cols; j++) {
                 B[i][j] = A[i][j] * scalar;
@@ -116,9 +142,9 @@ namespace myna {
         return B;
     }
 
-    template<typename T2>
-    Mat<T2> operator+(T2 scalar, const Mat<T2> &A) {
-        Mat<T2> B(A.rows, A.cols);
+    template<typename T>
+    Mat<T> operator+(T scalar, const Mat<T> &A) {
+        Mat<T> B(A.rows, A.cols);
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.cols; j++) {
                 B[i][j] = A[i][j] - scalar;
@@ -127,14 +153,14 @@ namespace myna {
         return B;
     }
 
-    template<typename T2>
-    Mat<T2> operator+(const Mat<T2> &A, T2 scalar) {
+    template<typename T>
+    Mat<T> operator+(const Mat<T> &A, T scalar) {
 
     }
 
-    template<typename T2>
-    Mat<T2> operator-(T2 scalar, const Mat<T2> &A) {
-        Mat<T2> B(A.rows, A.cols);
+    template<typename T>
+    Mat<T> operator-(T scalar, const Mat<T> &A) {
+        Mat<T> B(A.rows, A.cols);
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.cols; j++) {
                 B[i][j] = A[i][j] - scalar;
@@ -143,9 +169,9 @@ namespace myna {
         return B;
     }
 
-    template<typename T2>
-    Mat<T2> operator-(const Mat<T2> &A, T2 scalar) {
-        Mat<T2> B(A.rows, A.cols);
+    template<typename T>
+    Mat<T> operator-(const Mat<T> &A, T scalar) {
+        Mat<T> B(A.rows, A.cols);
         for (int i = 0; i < A.rows; i++) {
             for (int j = 0; j < A.cols; j++) {
                 B[i][j] = scalar - A[i][j];
@@ -198,7 +224,6 @@ namespace myna {
         return *this;
     }
 
-
     MATTEMPLATE
     Mat<T>::Mat(const Mat<T> &mat) {
         //std::cout << "call copy constructor!" << std::endl;
@@ -244,7 +269,6 @@ namespace myna {
         }
     }
 
-
     MATTEMPLATE
     Mat<T>::~Mat() {
         if (this->rows == 0 || this->cols == 0 || this->data == nullptr) {
@@ -277,7 +301,6 @@ namespace myna {
         return this->rows;
     }
 
-
     MATTEMPLATE
     T *Mat<T>::operator[](int i) {
         return this->data[i];
@@ -289,7 +312,6 @@ namespace myna {
     const T *Mat<T>::operator[](int i) const {
         return this->data[i];
     }
-
 
     MATTEMPLATE
     Mat<T> Mat<T>::operator+(const Mat<T> &A) {
@@ -418,7 +440,6 @@ namespace myna {
         }
         return mat;
     }
-
 
     MATTEMPLATE
     Mat<T> Mat<T>::mean(Axis axis) {
@@ -591,13 +612,13 @@ namespace myna {
         if (vec.getRows() == this->rows) {
             for (int i = 0; i < this->rows; i++) {
                 for (int j = 0; j < this->cols; j++) {
-                    B[i][j] = this->data[i][j] + vec[i];
+                    B[i][j] = this->data[i][j] + vec[i][0];
                 }
             }
         } else if (vec.getCols() == this->cols) {
             for (int i = 0; i < this->rows; i++) {
                 for (int j = 0; j < this->cols; j++) {
-                    B[i][j] = this->data[i][j] + vec[j];
+                    B[i][j] = this->data[i][j] + vec[0][j];
                 }
             }
         } else {

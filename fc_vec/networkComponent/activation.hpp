@@ -10,39 +10,48 @@
 
 using namespace myna;
 
-// class Activator---------------------
-
-class Activator {
+// sigmoid
+class Sigmoid {
 public:
-    virtual Mat<double> forward(const Mat<double> &in, Mat<double> &out);
+    static void forward(const Mat<double> &in, Mat<double> &out);
 
-    virtual Mat<double> backward(const Mat<double> &in, Mat<double> &out);
+    static void backward(const Mat<double> &in, Mat<double> &out);
 };
 
+// relu
+class Relu {
+public:
+    static void forward(const Mat<double> &in, Mat<double> &out);
+
+    static void backward(const Mat<double> &in, Mat<double> &out);
+};
 
 // sigmoid
-class SigmoidActivator : public Activator {
-    virtual Mat<double> forward(const Mat<double> &in, Mat<double> &out);
-
-    virtual Mat<double> backward(const Mat<double> &in, Mat<double> &out);
-};
-
-
-// Activator-----------------------
-Mat<double> Activator::forward(const Mat<double> &in, Mat<double> &out) {};
-
-Mat<double> Activator::backward(const Mat<double> &in, Mat<double> &out) {};
-
-// SigmoidActivator----------------
-Mat<double> SigmoidActivator::forward(const Mat<double> &in, Mat<double> &out) {
+void Sigmoid::forward(const Mat<double> &in, Mat<double> &out) {
     sigmoid(in, out);
 };
 
-Mat<double> SigmoidActivator::backward(const Mat<double> &in, Mat<double> &out) {
-    Mat<double> s;
-    sigmoid(in, s);
-    out = s * (1.0 - s);//copy memory.
+void Sigmoid::backward(const Mat<double> &in, Mat<double> &out) {
+    Mat<double> a;
+    sigmoid(in, a);
+    out = a * (1.0 - a);//copy memory.
 };
 
+// relu
+void Relu::forward(const Mat<double> &in, Mat<double> &out) {
+    relu(in, out);
+};
+
+void Relu::backward(const Mat<double> &in, Mat<double> &out) {
+    for (int i = 0; i < in.getRows(); i++) {
+        for (int j = 0; j < in.getCols(); j++) {
+            if (out[i][j] > 0) {
+                out[i][j] = 1;
+            } else {
+                out[i][j] = 0;
+            }
+        }
+    }
+};
 
 #endif //FC_VEC_ACTIVATION_H

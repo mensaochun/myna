@@ -8,28 +8,34 @@
 #include "../dataType/mat.hpp"
 #include "utils.hpp"
 #include "activation.hpp"
-
+#include <vector>
+using std::vector;
 using namespace myna;
-typedef void (*ptrActivation)(const Mat<double> &,Mat<double> &);//typedef activation function's pointer.
 
 // ------------------BaseLayer-----------------
 class BaseLayer {
 protected:
-    Mat<double> input;
+    Mat<double> *input;//share memory with previous layer. So it is a pointer.
     Mat<double> output;
-    Mat<double> weight;
-    Mat<double> bias;
+    std::vector<Mat<double>> weights;// contain weight and bias.
+    std::vector<Mat<double>> gradients;// contain gradient of weight and bias.
     Mat<double> delta;
-    Mat<double> gradient;
 
 public:
-    virtual void setInput(const Mat<double> &in);
-    virtual Mat<double> & getDelta();
-    virtual Mat<double> & getOutput();
-    virtual Mat<double> & getWeight();
-    virtual Mat<double> & getGradient();
+    virtual void setInput(Mat<double> *in);
+
+    virtual Mat<double> &getDelta();
+
+    virtual Mat<double> &getOutput();
+
+//    virtual vector<Mat<double>> &getWeight();
+
+//    virtual Mat<double> &getGradient();
+
     virtual void forward();
+
     virtual void backward();
+
     virtual void backward(const Mat<double> &nextDelta);
 
 
@@ -37,19 +43,21 @@ public:
 
 // ---------------InputLayer-----------------
 class InputLayer : public BaseLayer {
+private:
+    Mat<double> input;
 
 public:
-    virtual Mat<double> & getOutput();
+    virtual void setInput(const Mat<double> &X);
+    virtual Mat<double> &getOutput(); // to return input due to input=output
 };
 
 
 // ---------------FullyConnectedLayer-----------------
+template<typename Activator>
 class FullyConnectedLayer : public BaseLayer {
-private:
-    Activator *activator;
 public:
-    //FullyConnectedLayer(int numIn, int numOut,ptrActivation pf);
-    FullyConnectedLayer(int numIn, int numOut,Activator *activator);
+
+    FullyConnectedLayer(int numIn, int numOut);
 
     virtual void forward();
 
@@ -57,42 +65,54 @@ public:
 
 };
 
-class SigmoidLayer:public BaseLayer{
+class SigmoidLayer : public BaseLayer {
 private:
     Mat<double> Y;
 public:
-    SigmoidLayer(int numIn,int numOut,const Mat<double> &Y);
+    SigmoidLayer(int numIn, int numOut, const Mat<double> &Y);
+
     virtual void forward();
+
     virtual void backward();
 
 };
 
 
 // BaseLayer
-void BaseLayer::setInput(const Mat<double> &input){
-    Mat<double> oneMat(1,input.getCols(),Fill::ONES);
-    this->input=input.concatenate(oneMat,Axis::ROW);
-}
-Mat<double> & BaseLayer::getOutput() {
-    return this->output;
-}
-Mat<double>& BaseLayer::getDelta(){
-    return this->delta;
-}
-Mat<double> & BaseLayer::getWeight(){
-    return this->weight;
-}
-Mat<double> & BaseLayer::getGradient(){
-    return this->gradient;
+void BaseLayer::setInput(Mat<double> *in) {
+    this->input = in;
 }
 
-void BaseLayer::forward(){};
-void BaseLayer::backward(){};
-void BaseLayer::backward(const Mat<double> &nextDelta){};
+Mat<double> &BaseLayer::getOutput() {
+    return output;
+}
+
+Mat<double> &BaseLayer::getDelta() {
+    return delta;
+}
+
+//vector<Mat<double>> &BaseLayer::getWeight() {
+//    return weights;
+//}
+//
+//Mat<double> &BaseLayer::getGradient() {
+//    return gradient;
+//}
+
+void BaseLayer::forward() {};
+
+void BaseLayer::backward() {};
+
+void BaseLayer::backward(const Mat<double> &nextDelta) {};
 
 // InputLayer
-Mat<double>& InputLayer::getOutput() {
-    return this->input;
+
+void InputLayer::setInput(const Mat<double> &X){
+    input=X;
+}
+
+Mat<double> &InputLayer::getOutput() {
+    return input;
 }
 
 // FullyConnetedLayer
@@ -103,41 +123,40 @@ Mat<double>& InputLayer::getOutput() {
 //    this->activationFunction=pf;
 //}
 
-FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut,Activator *activator){
-    bias=Mat<double>(numOut, 1, Fill::ZEROS);
+FullyConnectedLayer::FullyConnectedLayer(int numIn, int numOut) {
+    bias = Mat<double>(numOut, 1, Fill::ZEROS);
     weight = Mat<double>(numOut, numIn, Fill::RANDOM);
-    this->activator=activator;
 }
 
 void FullyConnectedLayer::forward() {
-    Mat<double> Z = weight.matMul(this->input);
-    this->output=Mat<double>(Z.getRows(),Z.getCols());
-    this->activator->forward(Z, this->output);
+    Mat<double> Z = weight.matMul(input).matAddVec(bias);
+    output = Mat<double>(Z.getRows(), Z.getCols());
+    activator->forward(Z, output);
 }
 
-void FullyConnectedLayer::backward(const Mat<double> &nextDelta){
-    Mat<double> weightTrans=this->weight.transport();
+void FullyConnectedLayer::backward(const Mat<double> &nextDelta) {
+    Mat<double> weightTrans = weight.transport();
     Mat<double> derivative;
-    this->activator->backward(this->output,derivative);
-    this->delta=derivative*(weightTrans.matMul(nextDelta));
-    this->gradient=this->delta.matMul(this->input.transport());
+    activator->backward(output, derivative);
+    delta = derivative * (weightTrans.matMul(nextDelta));
+    gradient = delta.matMul(input.transport());
 }
 
 
 // SigmoidLayer
-SigmoidLayer::SigmoidLayer(int numIn, int numOut,const Mat<double> &Y) {
-    bias=Mat<double>(numOut, 1, Fill::ZEROS);
+SigmoidLayer::SigmoidLayer(int numIn, int numOut, const Mat<double> &Y) {
+    bias = Mat<double>(numOut, 1, Fill::ZEROS);
     weight = Mat<double>(numOut, numIn, Fill::RANDOM);
-    this->Y=Y;
+    this->Y = Y;
 }
 
 void SigmoidLayer::forward() {
-    sigmoid(this->input,this->output);
+    sigmoid(input, output);
 }
 
-void SigmoidLayer::backward(){
-    this->delta=output*(1.0-output)*(Y-output);
-    this->gradient=delta.matMul(input.transport());
+void SigmoidLayer::backward() {
+    delta = output * (1.0 - output) * (Y - output);
+    gradient = delta.matMul(input.transport());
 }
 
 
