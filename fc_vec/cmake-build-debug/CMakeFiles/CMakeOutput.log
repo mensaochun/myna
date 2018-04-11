@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/pi/stone/c++/myna/fc_vec
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_560eb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_560eb.dir/build.make CMakeFiles/cmTC_560eb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2677a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2677a.dir/build.make CMakeFiles/cmTC_2677a.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_560eb.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_560eb.dir/testCCompiler.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_560eb
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_560eb.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_560eb.dir/testCCompiler.c.o  -o cmTC_560eb 
+Building C object CMakeFiles/cmTC_2677a.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2677a.dir/testCCompiler.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_2677a
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2677a.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_2677a.dir/testCCompiler.c.o  -o cmTC_2677a 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4177b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4177b.dir/build.make CMakeFiles/cmTC_4177b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5794f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5794f.dir/build.make CMakeFiles/cmTC_5794f.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o   -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_4177b
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4177b.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o  -o cmTC_4177b 
+Building C object CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o   -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_5794f
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5794f.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o  -o cmTC_5794f 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4177b' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4177b /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5794f' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5794f /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_4177b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_4177b.dir/build.make CMakeFiles/cmTC_4177b.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5794f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5794f.dir/build.make CMakeFiles/cmTC_5794f.dir/build]
   ignore line: [make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o   -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_4177b]
-  ignore line: [/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4177b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o  -o cmTC_4177b ]
+  ignore line: [Building C object CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o   -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_5794f]
+  ignore line: [/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5794f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o  -o cmTC_5794f ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4177b' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_4177b /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5794f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_5794f /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -99,7 +99,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_4177b] ==> ignore
+    arg [cmTC_5794f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -111,7 +111,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_4177b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_5794f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -141,14 +141,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_626bb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_626bb.dir/build.make CMakeFiles/cmTC_626bb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a34bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a34bc.dir/build.make CMakeFiles/cmTC_a34bc.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_626bb.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_626bb.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_626bb
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_626bb.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_626bb.dir/feature_tests.c.o  -o cmTC_626bb 
+Building C object CMakeFiles/cmTC_a34bc.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a34bc.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a34bc
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a34bc.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_a34bc.dir/feature_tests.c.o  -o cmTC_a34bc 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -161,14 +161,14 @@ make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMa
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6e20e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6e20e.dir/build.make CMakeFiles/cmTC_6e20e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_8c346/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8c346.dir/build.make CMakeFiles/cmTC_8c346.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6e20e.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_6e20e.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6e20e
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e20e.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_6e20e.dir/feature_tests.c.o  -o cmTC_6e20e 
+Building C object CMakeFiles/cmTC_8c346.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_8c346.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8c346
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c346.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8c346.dir/feature_tests.c.o  -o cmTC_8c346 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -181,14 +181,14 @@ make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMa
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6bc3a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6bc3a.dir/build.make CMakeFiles/cmTC_6bc3a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b0de1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0de1.dir/build.make CMakeFiles/cmTC_b0de1.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6bc3a.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6bc3a.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_6bc3a
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bc3a.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_6bc3a.dir/feature_tests.c.o  -o cmTC_6bc3a 
+Building C object CMakeFiles/cmTC_b0de1.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b0de1.dir/feature_tests.c.o   -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b0de1
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0de1.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b0de1.dir/feature_tests.c.o  -o cmTC_b0de1 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -199,28 +199,28 @@ make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMa
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9544a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9544a.dir/build.make CMakeFiles/cmTC_9544a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_eebab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eebab.dir/build.make CMakeFiles/cmTC_eebab.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9544a.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9544a.dir/testCXXCompiler.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_9544a
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9544a.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_9544a.dir/testCXXCompiler.cxx.o  -o cmTC_9544a 
+Building CXX object CMakeFiles/cmTC_eebab.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_eebab.dir/testCXXCompiler.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_eebab
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eebab.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_eebab.dir/testCXXCompiler.cxx.o  -o cmTC_eebab 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9654/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f9654.dir/build.make CMakeFiles/cmTC_f9654.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d11a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d11a6.dir/build.make CMakeFiles/cmTC_d11a6.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f9654
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9654.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f9654 
+Building CXX object CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_d11a6
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11a6.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d11a6 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -230,8 +230,8 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9654' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f9654 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d11a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d11a6 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -239,14 +239,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f9654/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f9654.dir/build.make CMakeFiles/cmTC_f9654.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d11a6/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d11a6.dir/build.make CMakeFiles/cmTC_d11a6.dir/build]
   ignore line: [make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f9654]
-  ignore line: [/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9654.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f9654 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o -c /home/pi/stone/software-install/clion-2017.3.2/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_d11a6]
+  ignore line: [/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11a6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d11a6 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -256,8 +256,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9654' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f9654 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d11a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d11a6 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -270,7 +270,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f9654] ==> ignore
+    arg [cmTC_d11a6] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -282,7 +282,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_f9654.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d11a6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -310,14 +310,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52f35/fast"
-/usr/bin/make -f CMakeFiles/cmTC_52f35.dir/build.make CMakeFiles/cmTC_52f35.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0c32e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c32e.dir/build.make CMakeFiles/cmTC_0c32e.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_52f35.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_52f35.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_52f35
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52f35.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_52f35.dir/feature_tests.cxx.o  -o cmTC_52f35 
+Building CXX object CMakeFiles/cmTC_0c32e.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_0c32e.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_0c32e
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c32e.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_0c32e.dir/feature_tests.cxx.o  -o cmTC_0c32e 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -383,14 +383,14 @@ make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMa
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cd593/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cd593.dir/build.make CMakeFiles/cmTC_cd593.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_59967/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59967.dir/build.make CMakeFiles/cmTC_59967.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cd593.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_cd593.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_cd593
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd593.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_cd593.dir/feature_tests.cxx.o  -o cmTC_cd593 
+Building CXX object CMakeFiles/cmTC_59967.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_59967.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_59967
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59967.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_59967.dir/feature_tests.cxx.o  -o cmTC_59967 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
@@ -456,14 +456,14 @@ make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMa
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_405f3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_405f3.dir/build.make CMakeFiles/cmTC_405f3.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b98af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b98af.dir/build.make CMakeFiles/cmTC_b98af.dir/build
 make[1]: Entering directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_405f3.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_405f3.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_405f3
-/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_405f3.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_405f3.dir/feature_tests.cxx.o  -o cmTC_405f3 
+Building CXX object CMakeFiles/cmTC_b98af.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_b98af.dir/feature_tests.cxx.o -c /home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b98af
+/home/pi/stone/software-install/clion-2017.3.2/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b98af.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b98af.dir/feature_tests.cxx.o  -o cmTC_b98af 
 make[1]: Leaving directory `/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

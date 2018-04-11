@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp">
-			<Option target="fc_vec"/>
-		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/common.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
@@ -115,6 +112,9 @@
 			<Option target="fc_vec"/>
 		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/solver.hpp">
+			<Option target="fc_vec"/>
+		</Unit>
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/test_net.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
 		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/utils.hpp">

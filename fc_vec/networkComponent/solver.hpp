@@ -6,43 +6,46 @@
 #define FC_VEC_SOLVER_H
 
 #include "net.hpp"
+
 class Net;
-class Solver{
+
+class Solver {
 private:
     int maxIters;
     double learningRate;
     Net *net;
 public:
-    Solver(int iters,double learningRate,Net *net);
+    Solver(int maxIters, double learningRate, Net *net);
+
     void updateWeight();
 
     void run();
 
 };
 
-Solver::Solver(int iters,double learningRate,Net *net) {
-    this->learningRate=learningRate;
-    this->maxIters=iters;
-    this->net=net;
+Solver::Solver(int maxIters, double learningRate, Net *net) {
+    this->learningRate = learningRate;
+    this->maxIters = maxIters;
+    this->net = net;
 }
 
-void Solver::updateWeight(){
-    for(int i=1;i<net->numLayers;i++){
-        net->layerList[i]->getWeight()=net->layerList[i]->getWeight()+learningRate*net->layerList[i]->getGradient();
+void Solver::updateWeight() {
+    for (int i = 1; i < net->numLayers; i++) {
+        net->layerList[i]->getWeight() =
+                net->layerList[i]->getWeight() + learningRate * net->layerList[i]->getGradient();
     }
 }
 
 
-
-void Solver::run(){
-    std::cout<<"Begin training..."<<std::endl;
-    for(int i=0;i<maxIters;i++){
-        std::cout<<"Iterarion:"<<i<<" ";
-        this->net->step();
-        this->updateWeight();
-        std::cout<<"Loss:"<<this->net->calculateLoss()<<std::endl;
+void Solver::run() {
+    std::cout << "Begin training..." << std::endl;
+    for (int i = 0; i < maxIters; i++) {
+        std::cout << "Iterarion:" << i << " ";
+        net->step();
+        updateWeight();
+        std::cout << "Loss:" << net->calculateLoss() << std::endl;
     }
-    std::cout<<"Finish training..."<<std::endl;
+    std::cout << "Finish training..." << std::endl;
 }
 
 #endif //FC_VEC_SOLVER_H

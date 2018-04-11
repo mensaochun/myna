@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/fc_vec.dir/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp.o CMakeFiles/fc_vec.dir/main.cpp.o  -o fc_vec 
+/usr/bin/c++  -g   CMakeFiles/fc_vec.dir/main.cpp.o  -o fc_vec 
