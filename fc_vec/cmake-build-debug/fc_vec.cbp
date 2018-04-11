@@ -8,117 +8,119 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/c++/myna/fc_vec/cmake-build-debug"/>
+				<Option working_dir="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="fc_vec">
-				<Option output="E:/c++/myna/fc_vec/cmake-build-debug/fc_vec.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/c++/myna/fc_vec/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 fc_vec"/>
-					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="fc_vec/fast">
-				<Option output="E:/c++/myna/fc_vec/cmake-build-debug/fc_vec.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/c++/myna/fc_vec/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="d:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 fc_vec/fast"/>
-					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="E:/c++/myna/fc_vec/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/c++/myna/fc_vec/cmake-build-debug"/>
+				<Option working_dir="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fc_vec">
+				<Option output="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/fc_vec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 fc_vec"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fc_vec/fast">
+				<Option output="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/fc_vec" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pi/stone/c++/myna/fc_vec/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 fc_vec/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/pi/stone/c++/myna/fc_vec/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c++/myna/fc_vec/dataType/common.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/common.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/dataType/mat.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/mat.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/dataType/test_mat.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/test_mat.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/dataType/test_vec.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/test_vec.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/dataType/vector.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/dataType/vector.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/main.cpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/main.cpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/activation.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/activation.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/layer.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/layer.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/net.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/net.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/solver.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/solver.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/test_net.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/test_net.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/networkComponent/utils.hpp">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/networkComponent/utils.hpp">
 			<Option target="fc_vec"/>
 		</Unit>
-		<Unit filename="E:/c++/myna/fc_vec/CMakeLists.txt">
+		<Unit filename="/home/pi/stone/c++/myna/fc_vec/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
