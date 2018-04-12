@@ -1,3 +1,0 @@
-"D:\CLion 2017.2.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\decision_tree.dir/objects.a
-D:\MinGW\bin\ar.exe cr CMakeFiles\decision_tree.dir/objects.a @CMakeFiles\decision_tree.dir\objects1.rsp
-D:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\decision_tree.dir/objects.a -Wl,--no-whole-archive  -o decision_tree.exe -Wl,--out-implib,libdecision_tree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\decision_tree.dir\linklibs.rsp

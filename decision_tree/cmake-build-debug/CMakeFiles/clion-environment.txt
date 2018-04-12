@@ -1,3 +1,0 @@
-ToolSet: 5.0@D:\MinGW
-Options: 
-CMake: 3.8.2@D:\CLion 2017.2.3\bin\cmake\bin\cmake.exe
