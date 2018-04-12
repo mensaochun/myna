@@ -21,12 +21,17 @@ struct Node{
 };
 
 class DecisionTree{
-private:
+public:
     Node *rootNode;
     vector<vector<string>>  dataTable;
-private:
-    DecisionTree();
+public:
+    void printStrVec(vector<string> vec);
+    void printStrTable(vector<vector<string>> strTabel);
+    void readFile(string dataFile,vector<vector<string>> &dataTable);
+public:
+    DecisionTree(string trainDataFile);
     ~DecisionTree();
-    void readFile(string dataFile);
+    void buildTree();
+
 };
 #endif //DECISION_TREE_H
