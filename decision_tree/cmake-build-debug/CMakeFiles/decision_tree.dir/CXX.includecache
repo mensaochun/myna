@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/stone/c++/myna/decision_tree/decision_tree.cpp
+decision_tree.h
+/home/pi/stone/c++/myna/decision_tree/decision_tree.h
+
+/home/pi/stone/c++/myna/decision_tree/decision_tree.h
+iostream
+-
+vector
+-
+fstream
+-
+iomanip
+-
+map
+-
+math.h
+-
+algorithm
+-
+
+/home/pi/stone/c++/myna/decision_tree/main.cpp
+iostream
+-
+map
+-
+vector
+-
+algorithm
+-
+
