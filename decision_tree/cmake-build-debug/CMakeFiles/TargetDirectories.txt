@@ -1,3 +1,0 @@
-/home/pi/stone/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/pi/stone/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/pi/stone/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/decision_tree.dir
