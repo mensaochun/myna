@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/stone/c++/myna/decision_tree/decision_tree.cpp
+E:/c++/myna/decision_tree/decision_tree.cpp
 decision_tree.h
-/home/pi/stone/c++/myna/decision_tree/decision_tree.h
+E:/c++/myna/decision_tree/decision_tree.h
 
-/home/pi/stone/c++/myna/decision_tree/decision_tree.h
+E:/c++/myna/decision_tree/decision_tree.h
 iostream
 -
 vector
@@ -25,14 +25,10 @@ math.h
 -
 algorithm
 -
+string
+-
 
-/home/pi/stone/c++/myna/decision_tree/main.cpp
-iostream
--
-map
--
-vector
--
-algorithm
--
+E:/c++/myna/decision_tree/main.cpp
+decision_tree.h
+E:/c++/myna/decision_tree/decision_tree.h
 

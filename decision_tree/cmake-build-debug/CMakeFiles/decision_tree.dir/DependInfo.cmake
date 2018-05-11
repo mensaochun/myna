@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/stone/c++/myna/decision_tree/decision_tree.cpp" "/home/pi/stone/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/decision_tree.dir/decision_tree.cpp.o"
-  "/home/pi/stone/c++/myna/decision_tree/main.cpp" "/home/pi/stone/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/decision_tree.dir/main.cpp.o"
+  "E:/c++/myna/decision_tree/decision_tree.cpp" "E:/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/decision_tree.dir/decision_tree.cpp.obj"
+  "E:/c++/myna/decision_tree/main.cpp" "E:/c++/myna/decision_tree/cmake-build-debug/CMakeFiles/decision_tree.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
